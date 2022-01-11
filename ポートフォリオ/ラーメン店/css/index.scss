@@ -1,0 +1,100 @@
+header {
+  padding: 10px 0;
+  background-image: url(../image/fujin_img01.png);
+  .fujin__box01 {
+    width: 1000px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    &__logo {
+      width: 300px;
+      img {
+        width: 100%;
+      }
+    }
+    &__right {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    &__contact {
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      span {
+        position: relative;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 2.0;
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          width: 25px;
+          height: 25px;
+          background: url(../image/fujin_logo02.png) no-repeat 0 0;
+          background-size: 25px 25px;
+        }
+      }
+    }
+    &__reserve {
+      margin-left: 25px;
+      padding: 20px 10px;
+      border-radius: 20px;
+      display: block;
+      background: #db3b1f;
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,0.15);
+      text-align: center;
+      font-weight: bold;
+      color: #ffffff;
+      &:hover {
+        transition: .6s;
+        background: #bd2611;
+      }
+    }
+  }
+
+}
+
+nav {
+  // background-image: url(../image/fujin_img01.png);
+  background-color: #db3b1f;
+}
+.fujin__box02 {
+  &__nav {
+    width: 1000px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    li {
+      width: 16.6%;
+      text-align: center;
+      font-size: 18px;
+      &:hover {
+        transition: .6s;
+        background: #bd2611;
+      }
+      a {
+        display: block;
+        padding: 10px 0;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+    li + li {
+      margin-left: 15px;
+    }
+  }
+}
