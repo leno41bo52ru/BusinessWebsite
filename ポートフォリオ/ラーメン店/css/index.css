@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   padding: 10px 0;
   background-image: url(../image/fujin_img01.png);
@@ -119,5 +120,30 @@ nav {
 
 .fujin__box02__nav li + li {
   margin-left: 15px;
+}
+
+.fujin__content01 {
+  height: 450px;
+}
+
+.fujin__content01 .swiper {
+  height: 450px;
+  max-width: 100%;
+}
+
+.fujin__content01 .swiper .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+
+.fujin__content01 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* この一行を追加するだけ！ */
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
 }
 /*# sourceMappingURL=index.css.map */

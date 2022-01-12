@@ -10,19 +10,14 @@
   <meta name="keywords" content="ポートフォリオラーメン,醤油ラーメン,豚骨ラーメン">
 
   <!-- 外部ファイルの読み込み -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-  <link rel="stylesheet" href="css/swiper.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
   <!-- [if lt IE 9] -->
   <!-- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> -->
   <!-- [endif] -->
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="js/swiper.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- アイコン -->
   <link rel="shortcut icon" href="image/favicon.ico" />
@@ -59,9 +54,9 @@
  <!----- header----->
  <header>
   <div class="fujin__box01">
-    <div class="fujin__box01__logo">
+    <h1 class="fujin__box01__logo">
       <a href="index.html"><img src="image/fujin_logo01.png" alt="FUJINロゴ"></a>
-    </div>
+    </h1>
     <div class="fujin__box01__right">
       <div class="fujin__box01__contact">
       ご予約・お問い合わせはこちら<br>
@@ -89,34 +84,40 @@
  <!----- main ----->
  <main>
 
-  <h1>タイトル</h1>
-  <section>
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+  <section class="fujin__content01">
+    <!-- スライダーのメインコンテナの div 要素（必須） -->
+    <div class="swiper">
+      <!-- スライドを囲む div 要素（必須） -->
+      <div class="swiper-wrapper">
+        <!-- それぞれのスライドの div 要素（必須） -->
+        <div class="swiper-slide"><img src="image/fujin_img02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/fujin_img03.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/fujin_img04.jpg" alt=""></div>
+      </div>
+      <!-- ページネーションの div 要素（省略可能） -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- ナビゲーションボタンの div 要素（省略可能） -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- スクロールバーの div 要素（省略可能） -->
+      <div class="swiper-scrollbar"></div>
+    </div>
   </section>
+
+  <div class="button">クリック！</div>
+  <div class="box">
+      メニュー表示部分です。
+  </div>
 </main>
  <!----- /main ----->
  
  <!----- footer ----->
  <footer>フッター</footer>
  <!----- /footer ----->
+
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
  </body>
 </html>
