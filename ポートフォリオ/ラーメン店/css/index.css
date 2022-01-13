@@ -58,7 +58,7 @@ header .fujin__box01__contact span::after {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url(../image/fujin_logo02.png) no-repeat 0 0;
+  background: url(../image/fujin_icon01.png) no-repeat 0 0;
   background-size: 25px 25px;
 }
 
@@ -143,7 +143,132 @@ nav {
   /* この一行を追加するだけ！ */
 }
 
+.fujin__content02 {
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.fujin__content02::before {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  display: block;
+  background: #f1efe9;
+  left: 0;
+  top: 0;
+  width: 700px;
+  height: 680px;
+}
+
+.fujin__content02__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fujin__content02__title {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.fujin__content02__title span {
+  position: absolute;
+  display: inline-block;
+  bottom: -20px;
+  right: 0;
+  color: #db3b1f;
+}
+
+.fujin__content02__box01 {
+  position: relative;
+}
+
+.fujin__content02__box02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 645px;
+  background: url(../image/fujin_img05.jpg) no-repeat center/cover;
+  margin-left: calc((100% - 1200px) / 2);
+  color: #db3b1f;
+}
+
+.fujin__content02__box02__text {
+  position: relative;
+  padding-left: 80px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .swiper-pagination {
   bottom: 10px !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  width: 48px;
+  /* ボタンの幅 */
+  height: 96px;
+  /* ボタンの高さ */
+  background-size: 48px 96px;
+  /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+  margin-top: -48px;
+  /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+}
+
+/* 次ページボタンのスタイル */
+.swiper-button-next {
+  background-image: url(../image/fujin_icon02.png);
+}
+
+.swiper-button-next:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: url(../image/fujin_icon02_hover.png);
+}
+
+/* 前ページボタンのスタイル */
+.swiper-button-prev {
+  background-image: url(../image/fujin_icon02.png);
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  /* 左右反転 */
+}
+
+.swiper-button-prev:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: url(../image/fujin_icon02_hover.png);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
