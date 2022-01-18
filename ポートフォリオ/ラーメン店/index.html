@@ -57,7 +57,7 @@
     <h1 class="fujin__box01__logo">
       <a href="index.html"><img src="image/fujin_logo01.png" alt="FUJINロゴ"></a>
     </h1>
-    <div class="fujin__box01__right">
+    <div class="fujin__box01__right pcOnly">
       <div class="fujin__box01__contact">
       ご予約・お問い合わせはこちら<br>
       <span>01-2345-6789</span>
@@ -67,10 +67,31 @@
         予約する
       </a>
     </div>
+    <div class="spOnly">
+      <div class="nav-wrapper">
+        <!-- ②ナビゲーションメニュー -->
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#commitment">こだわり</a></li>
+            <li class="nav-item"><a href="#menu">お品書き</a></li>
+            <li class="nav-item"><a href="#access">アクセス</a></li>
+            <li class="nav-item"><a href="#notice">お知らせ</a></li>
+            <li class="nav-item"><a href="#coupon">クーポン</a></li>
+            <li class="nav-item"><a href="/job.html">アルバイト</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="burger-btn">
+        <!-- ③ハンバーガーボタン -->
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+      </button>
+    </div>
    </div>
  </header>
   <nav>
-    <ul class="fujin__box02__nav">
+    <ul class="fujin__box02__nav pcOnly">
       <li><a href="#commitment">こだわり</a></li>
       <li><a href="#menu">お品書き</a></li>
       <li><a href="#access">アクセス</a></li>
@@ -108,7 +129,7 @@
 
   <section id="commitment" class="fujin__content02">
     <div class="fujin__content02__inner">
-      <h2 class="fujin__content02__title">こだわり<span>お店独自のこだわりスープ</span></h2>
+      <h2 class="fujin__content02__title">こだわり<span>お店独自の豚骨スープ</span></h2>
     </div>
     <div class="fujin__content02__box01">
       <div class="fujin__content02__box02">
@@ -120,6 +141,10 @@
     </div>
   </section>
 
+  <section id="menu" class="fujin__content03">
+    
+  </section>
+
 </main>
  <!----- /main ----->
  
@@ -127,7 +152,10 @@
  <footer>フッター</footer>
  <!----- /footer ----->
 
+ <!-- swiper.jsのCDN -->
  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jQueryのCDN -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  <script type="text/javascript" src="js/main.js"></script>
  </body>
 </html>

@@ -1,3 +1,10 @@
+//ハンバーガーメニュー開いてるときbody固定
+body.fixed {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
 header {
   padding: 10px 0;
   background-image: url(../image/fujin_img01.png);
@@ -10,8 +17,17 @@ header {
     justify-content: space-between;
     -webkit-align-items: center;
     align-items: center;
+    @media screen and (max-width:1000px) {
+      width: 100%;
+    }
     &__logo {
       width: 300px;
+      @media screen and (max-width:767px) {
+        width: 200px;
+      }
+      a {
+        display: block;
+      }
       img {
         width: 100%;
       }
@@ -22,6 +38,113 @@ header {
       -webkit-align-items: center;
       align-items: center;
     }
+    //▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ハンバーガーメニュー記述▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+    @media screen and (max-width:767px) {
+      /* ----------------------- */
+      /* base_sp
+      /* ----------------------- */
+      /* 以下、ハンバーガーボタン */
+      .burger-btn{
+        display: block;      
+        width: 39px;      
+        height: 39px;      
+        position: relative;      
+        z-index: 3;
+        border:none;    
+      }    
+      .bar{      
+        width: 20px;      
+        height: 1px;        
+        display: block;      
+        position: absolute;      
+        left: 50%;      
+        transform: translateX(-50%);      
+        background-color: #fff;    
+      }    
+      .bar_top{   
+        top: 10px;
+      }
+      .bar_mid{    
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .bar_bottom{
+        bottom: 10px;
+      }
+      .burger-btn.close .bar_top{      
+        transform: translate(-50%,10px) rotate(45deg);      
+        transition: transform .3s;    
+      }    
+      .burger-btn.close .bar_mid{      
+        opacity: 0;       
+        transition: opacity .3s;    
+      }    
+      .burger-btn.close .bar_bottom{      
+        transform: translate(-50%,-8px) rotate(-45deg);      
+        transition: transform .3s;    
+      }
+
+      /* 以下、ハンバーガーメニュー */
+      .nav-wrapper{      
+        visibility: hidden;     
+        opacity: 0;
+        width: 100vw;      
+        height: 100vh;      
+        position: fixed;      
+        top: 0;      
+        left: 0;
+        transition: all .5s;       
+        z-index: 2;     
+      }     
+      .header-nav{        
+        width: 100%;        
+        height: 100%;        
+        // background-color:#99470e; 
+        background-image: url(../image/fujin_img01.png);
+        z-index: 2;      
+      }     
+      .nav-list{        
+        display: block;        
+        position: absolute;        
+        top: 50%;        
+        left: 50%;        
+        transform: translate(-50%,-50%);        
+        text-align: center;      
+      }      
+      .nav-item{        
+        margin-right: 0;        
+        margin-bottom: 40px;
+        a {
+          color: #ffffff;
+        } 
+      }
+
+      /* メニューオープン時 */
+      .nav-wrapper.fade {
+        visibility: visible;
+        opacity: 1;
+      }
+      .noscroll{
+        overflow: hidden;
+      }
+      /* デフォルトのbuttonスタイルをリセット */
+      button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+      }
+    }
+    //▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ハンバーガーメニュー記述▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
     &__contact {
       text-align: center;
       font-size: 14px;
@@ -78,6 +201,9 @@ nav {
     justify-content: space-between;
     -webkit-align-items: center;
     align-items: center;
+    @media screen and (max-width:1000px) {
+      width: 100%;
+    }
     li {
       width: 16.6%;
       text-align: center;
@@ -123,6 +249,10 @@ nav {
     position: relative;
     padding-top: 60px;
     margin-bottom: 60px;
+    @media screen and (max-width:767px) {
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
     &::before {
       z-index: -1;
       position: absolute;
@@ -133,22 +263,42 @@ nav {
       top: 0;
       width: 700px;
       height: 680px;
+      @media screen and (max-width:767px) {
+        width: 95%;
+        height: 450px;
+      }
     }
     &__inner {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+      @media screen and (max-width:767px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 10px;
+      }
     }
     &__title {
       position: relative;
-      margin-bottom: 30px;
       font-size: 48px;
       font-weight: bold;
+      @media screen and (max-width:767px) {
+        font-size: 36px;
+      }
       span {
         position: absolute;
         display: inline-block;
         bottom: -20px;
         right: 0;
+        font-size: 40px;
         color: #db3b1f;
+        @media screen and (max-width:767px) {
+          position: inherit;
+          width: calc(100% - 15px);
+          margin: 15px 0 0 20px;
+          bottom: 0;
+          font-size: 32px;
+        }
       }
     }
     &__box01 {
@@ -162,17 +312,31 @@ nav {
       position: relative;
       height: 645px;
       background: url(../image/fujin_img05.jpg) no-repeat center/cover;
-      margin-left: calc((100% - 1200px) / 2);
-      color: #db3b1f;
+      margin-left: calc((100% - 767px) / 2);
+      color: #ffffff;
+      @media screen and (max-width:767px) {
+        height: 470px;
+        margin-left: 30px;
+      }
       &__text {
         position: relative;
         padding-left: 80px;
         font-size: 28px;
         font-weight: bold;
+        @media screen and (max-width:767px) {
+          padding-left: 10px;
+          font-size: 20px;
+        }
       }
     }
   }
+
+  &__content03 {
+
+  }
 }
+
+
 
 //swiper.css上書き
 .swiper-pagination {
@@ -220,4 +384,17 @@ nav {
 //元矢印削除
 .swiper-button-prev:after, .swiper-button-next:after {
   display: none;
+}
+
+//pc,sp出し分け
+.pcOnly {
+  @media screen and (max-width:767px) { 
+    display: none!important;
+  }
+}
+.spOnly {
+  display: none!important;
+  @media screen and (max-width:767px) { 
+    display: block!important;
+  }
 }
