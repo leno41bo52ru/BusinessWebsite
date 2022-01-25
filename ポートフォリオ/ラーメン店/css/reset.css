@@ -71,7 +71,7 @@ ol {
 /* Lists (definition) */
 /* ============================================ */
 dt {
-  font-weight: bold;
+  font-weight: normal;
 }
 dd {
   margin-left: 0;
