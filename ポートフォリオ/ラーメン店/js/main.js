@@ -72,3 +72,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		document.getElementsByClassName('panel')[index].classList.add('is-show');
 	};
 }, false);
+
+$(".upper__wrapper").click(function(){
+  $('html,body').animate({'scrollTop':0},500);
+});

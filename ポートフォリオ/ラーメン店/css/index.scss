@@ -8,187 +8,192 @@ body.fixed {
 header {
   padding: 10px 0;
   background-image: url(../image/fujin_img01.png);
-  .fujin__box01 {
-    width: 1000px;
-    margin: 0 auto;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
-    @media screen and (max-width:1000px) {
-      width: 100%;
-    }
-    &__logo {
-      width: 300px;
-      @media screen and (max-width:767px) {
-        width: 200px;
-      }
-      a {
-        display: block;
-      }
-      img {
-        width: 100%;
-      }
-    }
-    &__right {
+  .fujin {
+    &__box01 {
+      width: 1000px;
+      margin: 0 auto;
       display: -webkit-flex;
       display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       -webkit-align-items: center;
       align-items: center;
-    }
-    //▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ハンバーガーメニュー記述▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
-    @media screen and (max-width:767px) {
-      /* ----------------------- */
-      /* base_sp
-      /* ----------------------- */
-      /* 以下、ハンバーガーボタン */
-      .burger-btn{
-        display: block;      
-        width: 39px;      
-        height: 39px;      
-        position: relative;      
-        z-index: 3;
-        border:none;    
-      }    
-      .bar{      
-        width: 20px;      
-        height: 1px;        
-        display: block;      
-        position: absolute;      
-        left: 50%;      
-        transform: translateX(-50%);      
-        background-color: #fff;    
-      }    
-      .bar_top{   
-        top: 10px;
+      @media screen and (max-width:1000px) {
+        width: 100%;
       }
-      .bar_mid{    
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
-      .bar_bottom{
-        bottom: 10px;
-      }
-      .burger-btn.close .bar_top{      
-        transform: translate(-50%,10px) rotate(45deg);      
-        transition: transform .3s;    
-      }    
-      .burger-btn.close .bar_mid{      
-        opacity: 0;       
-        transition: opacity .3s;    
-      }    
-      .burger-btn.close .bar_bottom{      
-        transform: translate(-50%,-8px) rotate(-45deg);      
-        transition: transform .3s;    
-      }
-
-      /* 以下、ハンバーガーメニュー */
-      .nav-wrapper{      
-        visibility: hidden;     
-        opacity: 0;
-        width: 100vw;      
-        height: 100vh;      
-        position: fixed;      
-        top: 0;      
-        left: 0;
-        transition: all .5s;       
-        z-index: 2;     
-      }     
-      .header-nav{        
-        width: 100%;        
-        height: 100%;        
-        // background-color:#99470e; 
-        background-image: url(../image/fujin_img01.png);
-        z-index: 2;      
-      }     
-      .nav-list{        
-        display: block;        
-        position: absolute;        
-        top: 50%;        
-        left: 50%;        
-        transform: translate(-50%,-50%);        
-        text-align: center;      
-      }      
-      .nav-item{        
-        margin-right: 0;        
-        margin-bottom: 40px;
+      &__logo {
+        width: 220px;
+        // height: 75px;
+        @media screen and (max-width:767px) {
+          width: 200px;
+          // height: 50px;
+        }
         a {
-          color: #ffffff;
-        } 
+          display: block;
+          &:hover {
+            transition: .3s;
+            opacity: 0.8;
+          }
+        }
+        img {
+          width: 100%;
+        }
       }
-
-      /* メニューオープン時 */
-      .nav-wrapper.fade {
-        visibility: visible;
-        opacity: 1;
+      &__right {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: baseline;
+        align-items: baseline;
       }
-      .noscroll{
-        overflow: hidden;
-      }
-      /* デフォルトのbuttonスタイルをリセット */
-      button {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background: transparent;
-        border: 0;
-        border-radius: 0;
-        color: inherit;
-        cursor: pointer;
-        font: inherit;
-        margin: 0;
-        outline: none;
-        padding: 0;
-        vertical-align: middle;
-      }
-    }
-    //▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ハンバーガーメニュー記述▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-    &__contact {
-      text-align: center;
-      font-size: 14px;
-      color: #ffffff;
-      span {
-        position: relative;
-        padding-left: 30px;
-        font-size: 18px;
-        line-height: 2.0;
-        &::after {
-          position: absolute;
-          content: "";
-          display: inline-block;
+      //▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ハンバーガーメニュー記述▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+      @media screen and (max-width:767px) {
+        /* ----------------------- */
+        /* base_sp
+        /* ----------------------- */
+        /* 以下、ハンバーガーボタン */
+        .burger-btn{
+          display: block;      
+          width: 39px;      
+          height: 39px;      
+          position: relative;      
+          z-index: 3;
+          border:none;    
+        }    
+        .bar{      
+          width: 20px;      
+          height: 1px;        
+          display: block;      
+          position: absolute;      
+          left: 50%;      
+          transform: translateX(-50%);      
+          background-color: #fff;    
+        }    
+        .bar_top{   
+          top: 10px;
+        }
+        .bar_mid{    
           top: 50%;
-          transform: translateY(-50%);
+          transform: translate(-50%,-50%);
+        }
+        .bar_bottom{
+          bottom: 10px;
+        }
+        .burger-btn.close .bar_top{      
+          transform: translate(-50%,10px) rotate(45deg);      
+          transition: transform .3s;    
+        }    
+        .burger-btn.close .bar_mid{      
+          opacity: 0;       
+          transition: opacity .3s;    
+        }    
+        .burger-btn.close .bar_bottom{      
+          transform: translate(-50%,-8px) rotate(-45deg);      
+          transition: transform .3s;    
+        }
+  
+        /* 以下、ハンバーガーメニュー */
+        .nav-wrapper{      
+          visibility: hidden;     
+          opacity: 0;
+          width: 100vw;      
+          height: 100vh;      
+          position: fixed;      
+          top: 0;      
           left: 0;
-          width: 25px;
-          height: 25px;
-          background: url(../image/fujin_icon01.png) no-repeat 0 0;
-          background-size: 25px 25px;
+          transition: all .5s;       
+          z-index: 2;     
+        }     
+        .header-nav{        
+          width: 100%;        
+          height: 100%;        
+          background-image: url(../image/fujin_img01.png);
+          z-index: 2;      
+        }     
+        .nav-list{        
+          display: block;        
+          position: absolute;        
+          top: 50%;        
+          left: 50%;        
+          transform: translate(-50%,-50%);        
+          text-align: center;      
+        }      
+        .nav-item{        
+          margin-right: 0;        
+          margin-bottom: 40px;
+          a {
+            color: #ffffff;
+          } 
+        }
+  
+        /* メニューオープン時 */
+        .nav-wrapper.fade {
+          visibility: visible;
+          opacity: 1;
+        }
+        .noscroll{
+          overflow: hidden;
+        }
+        /* デフォルトのbuttonスタイルをリセット */
+        button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: transparent;
+          border: 0;
+          border-radius: 0;
+          color: inherit;
+          cursor: pointer;
+          font: inherit;
+          margin: 0;
+          outline: none;
+          padding: 0;
+          vertical-align: middle;
+        }
+      }
+      //▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ハンバーガーメニュー記述▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+      &__contact {
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+        span {
+          position: relative;
+          padding-left: 30px;
+          font-size: 18px;
+          line-height: 2.0;
+          &::after {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 25px;
+            height: 25px;
+            background: url(../image/fujin_icon01.png) no-repeat 0 0;
+            background-size: 25px 25px;
+          }
+        }
+      }
+      &__reserve {
+        margin-left: 25px;
+        padding: 15px 10px;
+        border-radius: 20px;
+        display: block;
+        background: #db3b1f;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,0.15);
+        text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+        &:hover {
+          transition: .6s;
+          background: #bd2611;
         }
       }
     }
-    &__reserve {
-      margin-left: 25px;
-      padding: 20px 10px;
-      border-radius: 20px;
-      display: block;
-      background: #db3b1f;
-      box-shadow: 0 3px 5px 0 rgba(0,0,0,0.15);
-      text-align: center;
-      font-weight: bold;
-      color: #ffffff;
-      &:hover {
-        transition: .6s;
-        background: #bd2611;
-      }
-    }
   }
-
 }
 
 nav {
-  // background-image: url(../image/fujin_img01.png);
   background-color: #db3b1f;
 }
 .fujin__box02 {
@@ -214,30 +219,64 @@ nav {
       }
       a {
         display: block;
-        padding: 10px 0;
+        padding: 10px 8px;
         color: #ffffff;
         text-decoration: none;
       }
     }
-    li + li {
-      margin-left: 15px;
+  }
+}
+
+.upper {
+  &__wrapper {
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    width: 50px;
+    height: 50px;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    transition:.3s;
+    z-index: 10;
+    @media screen and (max-width:767px) {
+      right: 20px;
+      bottom: 20px;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__button {
+    position: relative;
+    &::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      left: 50%;
+      border-top: 2px solid #ffffff;
+      border-right: 2px solid #ffffff;
+      transform:translateX(-50%) translateY(0) rotate(-45deg);
     }
   }
 }
 
 .fujin {
   &__content01 {
-    height: 450px;
+    // height: 380px;
+    margin-bottom: 30px;
     .swiper {
-      height: 450px;
-      max-width: 100%;
-      // margin: 30px 0;
+      // height: 380px;
+      // max-width: 100%;
       .swiper-wrapper {
         .swiper-slide {
           height: auto;
           img {
             width: 100%;
-            height: 400px;
+            height: 100%;
+            // height: 400px;
             object-fit: cover; /* この一行を追加するだけ！ */
           }
         }
@@ -247,11 +286,9 @@ nav {
 
   &__content02 {
     position: relative;
-    padding-top: 60px;
-    margin-bottom: 60px;
+    padding: 60px 0;
     @media screen and (max-width:767px) {
-      padding-top: 30px;
-      margin-bottom: 30px;
+      padding: 30px 0;
     }
     &::before {
       z-index: -1;
@@ -338,7 +375,7 @@ nav {
       -webkit-align-items: center;
       align-items: center;
       position: relative;
-      height: 500px;
+      height: 600px;
       background: url(../image/fujin_img24.jpg) no-repeat center/cover;
       background-size: cover;
       margin-left: calc((100% - 767px) / 2);
@@ -367,9 +404,10 @@ nav {
   }
 
   &__content03 {
-    margin: 60px 0;
+    padding: 60px 0;
+    background-color: #fcf6f1;
     @media screen and (max-width:767px) {
-      margin: 30px 0;
+      padding: 30px 0;
     }
     &__inner {
       max-width: 1000px;
@@ -439,6 +477,30 @@ nav {
         -webkit-flex-direction: column;
         flex-direction: column;
       }
+      .icon {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          top: -30px;
+          right: -30px;
+          transform: rotate(25deg);
+          background-image: url(../image/fujin_icon03.png);
+          background-size: 100px,100px;
+          background-position: center,center;
+          background-repeat: no-repeat;
+          @media screen and (max-width:767px) {
+            width: 70px;
+            height: 70px;
+            top: -10px;
+            right: -10px;
+            background-size: 70px,70px;
+          }
+        }
+      }
       li {
         width: 45%;
         // min-height: 230px;
@@ -487,9 +549,9 @@ nav {
   }
 
   &__content04 {
-    margin: 60px 0;
+    padding: 60px 0;
     @media screen and (max-width:767px) {
-      margin: 30px 0;
+      padding: 30px 0;
     }
     &__inner {
       max-width: 1000px;
@@ -554,9 +616,10 @@ nav {
   }
 
   &__content05 {
-    margin: 60px 0;
+    padding: 60px 0;
+    background-color: #fcf6f1;
     @media screen and (max-width:767px) {
-      margin: 30px 0;
+      padding: 30px 0;
     }
     &__inner {
       max-width: 1000px;
@@ -801,9 +864,10 @@ nav {
   }
 
   &__content07 {
-    margin: 60px 0;
+    padding: 60px 0;
+    background-color: #fcf6f1;
     @media screen and (max-width:767px) {
-      margin: 30px 0;
+      padding: 30px 0;
     }
     &__inner {
       max-width: 1000px;
@@ -1002,11 +1066,102 @@ nav {
   }
 }
 
+footer {
+  .fujin {
+    &__footerWrapper {
+      padding: 50px 0;
+      background-color: #f1efe9;
+      @media screen and (max-width:767px) {
+        padding: 30px;
+      }
+    }
+    &__inner {
+      width: 780px;
+      margin: 0 auto;
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+    }
+    &__list {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      @media screen and (max-width:767px) {
+        -webkit-justify-content: left;
+        justify-content: left;
+        margin-bottom: 20px;
+      }
+      li {
+        margin: 5px 0;
+        a {
+          display: block;
+          padding: 5px 15px;
+          &:hover {
+            color: #db3b1f;
+            text-decoration: underline;
+          }
+        }
+      }
+      li:not(:last-child) {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 100%;
+          top: 0;
+          right: 0;
+          background-color: #000000;
+        }
+      }
+    }
+    &__sns {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+      li {
+        width: 35px;
+        @media screen and (max-width:767px) {
+          width: 25px;
+        }
+        a {
+          display: block;
+          &:hover {
+            opacity: .6;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      li:nth-of-type(n + 2) {
+        margin-left: 15px;
+      }
+    }
+    &__copylight {
+      padding: 10px 0;
+      background-color: #db3b1f;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
 
 
 //swiper.css上書き
 .swiper-pagination {
-  bottom: 10px !important;
+  position: relative!important;
+  bottom: -20px !important;
+  height: 40px!important;
 }
 .swiper-horizontal>.swiper-scrollbar {
   display: none;
