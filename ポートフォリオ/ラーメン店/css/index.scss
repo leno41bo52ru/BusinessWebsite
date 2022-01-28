@@ -1,4 +1,11 @@
 //ハンバーガーメニュー開いてるときbody固定
+body {
+  padding-top: 134px;
+  @media screen and (max-width:767px) {
+    padding-top: 86.6px;
+  }
+}
+
 body.fixed {
   width: 100%;
   height: 100%;
@@ -6,9 +13,16 @@ body.fixed {
 }
 
 header {
-  padding: 10px 0;
-  background-image: url(../image/fujin_img01.png);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
   .fujin {
+    &__top {
+      padding: 10px 0;
+      background-image: url(../image/fujin_img01.png);
+    }
     &__box01 {
       width: 1000px;
       margin: 0 auto;
@@ -191,11 +205,11 @@ header {
       }
     }
   }
+  nav {
+    background-color: #db3b1f;
+  }
 }
 
-nav {
-  background-color: #db3b1f;
-}
 .fujin__box02 {
   &__nav {
     width: 1000px;
@@ -265,11 +279,15 @@ nav {
 
 .fujin {
   &__content01 {
-    // height: 380px;
-    margin-bottom: 30px;
+    // background-image: url(../image/fujin_img01.png);
+    background-color: #fcf6f1;
+    // background-color: #db3b1f;
+    margin-bottom: 50px;
     .swiper {
       // height: 380px;
       // max-width: 100%;
+      width: 100%;
+      max-width: 1290px;
       .swiper-wrapper {
         .swiper-slide {
           height: auto;
@@ -1160,8 +1178,11 @@ footer {
 //swiper.css上書き
 .swiper-pagination {
   position: relative!important;
-  bottom: -20px !important;
-  height: 40px!important;
+  margin-top: -10px!important;
+  padding: 10px 0!important;
+  background-color: #db3b1f!important;
+  bottom: 0 !important;
+  // height: 40px!important;
 }
 .swiper-horizontal>.swiper-scrollbar {
   display: none;
@@ -1205,6 +1226,15 @@ footer {
 //元矢印削除
 .swiper-button-prev:after, .swiper-button-next:after {
   display: none;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--swiper-pagination-bullet-inactive-color,#ffffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, .9);
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #007aff;
 }
 
 //pc,sp出し分け

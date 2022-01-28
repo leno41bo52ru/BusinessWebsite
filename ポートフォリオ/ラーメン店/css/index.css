@@ -1,4 +1,14 @@
 @charset "UTF-8";
+body {
+  padding-top: 134px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 86.6px;
+  }
+}
+
 body.fixed {
   width: 100%;
   height: 100%;
@@ -6,6 +16,14 @@ body.fixed {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header .fujin__top {
   padding: 10px 0;
   background-image: url(../image/fujin_img01.png);
 }
@@ -227,7 +245,7 @@ header .fujin__box01__reserve:hover {
   background: #bd2611;
 }
 
-nav {
+header nav {
   background-color: #db3b1f;
 }
 
@@ -313,7 +331,13 @@ nav {
 }
 
 .fujin__content01 {
-  margin-bottom: 30px;
+  background-color: #fcf6f1;
+  margin-bottom: 50px;
+}
+
+.fujin__content01 .swiper {
+  width: 100%;
+  max-width: 1290px;
 }
 
 .fujin__content01 .swiper .swiper-wrapper .swiper-slide {
@@ -1559,8 +1583,10 @@ footer .fujin__copylight {
 
 .swiper-pagination {
   position: relative !important;
-  bottom: -20px !important;
-  height: 40px !important;
+  margin-top: -10px !important;
+  padding: 10px 0 !important;
+  background-color: #db3b1f !important;
+  bottom: 0 !important;
 }
 
 .swiper-horizontal > .swiper-scrollbar {
@@ -1623,6 +1649,17 @@ footer .fujin__copylight {
 
 .swiper-button-prev:after, .swiper-button-next:after {
   display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.9);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #007aff;
 }
 
 @media screen and (max-width: 767px) {
