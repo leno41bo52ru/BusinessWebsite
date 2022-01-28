@@ -1,369 +1,118 @@
 @charset "UTF-8";
-body {
-  padding-top: 134px;
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 86.6px;
-  }
-}
-
-body.fixed {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-header .fujin__top {
-  padding: 10px 0;
-  background-image: url(../image/fujin_img01.png);
-}
-
-header .fujin__box01 {
-  width: 1000px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 1000px) {
-  header .fujin__box01 {
-    width: 100%;
-  }
-}
-
-header .fujin__box01__logo {
-  width: 220px;
-}
-
-@media screen and (max-width: 767px) {
-  header .fujin__box01__logo {
-    width: 200px;
-  }
-}
-
-header .fujin__box01__logo a {
-  display: block;
-}
-
-header .fujin__box01__logo a:hover {
-  -webkit-transition: .3s;
-  transition: .3s;
-  opacity: 0.8;
-}
-
-header .fujin__box01__logo img {
-  width: 100%;
-}
-
-header .fujin__box01__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-@media screen and (max-width: 767px) {
-  header .fujin__box01 {
-    /* ----------------------- */
-    /* base_sp
-        /* ----------------------- */
-    /* 以下、ハンバーガーボタン */
-    /* 以下、ハンバーガーメニュー */
-    /* メニューオープン時 */
-    /* デフォルトのbuttonスタイルをリセット */
-  }
-  header .fujin__box01 .burger-btn {
-    display: block;
-    width: 39px;
-    height: 39px;
-    position: relative;
-    z-index: 3;
-    border: none;
-  }
-  header .fujin__box01 .bar {
-    width: 20px;
-    height: 1px;
-    display: block;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background-color: #fff;
-  }
-  header .fujin__box01 .bar_top {
-    top: 10px;
-  }
-  header .fujin__box01 .bar_mid {
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  header .fujin__box01 .bar_bottom {
-    bottom: 10px;
-  }
-  header .fujin__box01 .burger-btn.close .bar_top {
-    -webkit-transform: translate(-50%, 10px) rotate(45deg);
-            transform: translate(-50%, 10px) rotate(45deg);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-  }
-  header .fujin__box01 .burger-btn.close .bar_mid {
-    opacity: 0;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
-  }
-  header .fujin__box01 .burger-btn.close .bar_bottom {
-    -webkit-transform: translate(-50%, -8px) rotate(-45deg);
-            transform: translate(-50%, -8px) rotate(-45deg);
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-  }
-  header .fujin__box01 .nav-wrapper {
-    visibility: hidden;
-    opacity: 0;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    z-index: 2;
-  }
-  header .fujin__box01 .header-nav {
-    width: 100%;
-    height: 100%;
-    background-image: url(../image/fujin_img01.png);
-    z-index: 2;
-  }
-  header .fujin__box01 .nav-list {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  header .fujin__box01 .nav-item {
-    margin-right: 0;
-    margin-bottom: 40px;
-  }
-  header .fujin__box01 .nav-item a {
-    color: #ffffff;
-  }
-  header .fujin__box01 .nav-wrapper.fade {
-    visibility: visible;
-    opacity: 1;
-  }
-  header .fujin__box01 .noscroll {
-    overflow: hidden;
-  }
-  header .fujin__box01 button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    margin: 0;
-    outline: none;
-    padding: 0;
-    vertical-align: middle;
-  }
-}
-
-header .fujin__box01__contact {
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-header .fujin__box01__contact span {
-  position: relative;
-  padding-left: 30px;
-  font-size: 18px;
-  line-height: 2.0;
-}
-
-header .fujin__box01__contact span::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background: url(../image/fujin_icon01.png) no-repeat 0 0;
-  background-size: 25px 25px;
-}
-
-header .fujin__box01__reserve {
-  margin-left: 25px;
-  padding: 15px 10px;
-  border-radius: 20px;
-  display: block;
-  background: #db3b1f;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-  text-align: center;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-header .fujin__box01__reserve:hover {
-  -webkit-transition: .6s;
-  transition: .6s;
-  background: #bd2611;
-}
-
-header nav {
-  background-color: #db3b1f;
-}
-
-.fujin__box02__nav {
-  width: 1000px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .fujin__box02__nav {
-    width: 100%;
-  }
-}
-
-.fujin__box02__nav li {
-  width: 16.6%;
-  text-align: center;
-  font-size: 18px;
-}
-
-.fujin__box02__nav li:hover {
-  -webkit-transition: .6s;
-  transition: .6s;
-  background: #bd2611;
-}
-
-.fujin__box02__nav li a {
-  display: block;
-  padding: 10px 8px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.upper__wrapper {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  width: 50px;
-  height: 50px;
-  background-color: #2e2e2e;
-  border-radius: 50%;
-  -webkit-transition: .3s;
-  transition: .3s;
-  z-index: 10;
-}
-
-@media screen and (max-width: 767px) {
-  .upper__wrapper {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
-.upper__wrapper:hover {
-  opacity: .8;
-}
-
-.upper__button {
-  position: relative;
-}
-
-.upper__button::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  width: 15px;
-  height: 15px;
-  top: 20px;
-  left: 50%;
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  -webkit-transform: translateX(-50%) translateY(0) rotate(-45deg);
-          transform: translateX(-50%) translateY(0) rotate(-45deg);
-}
-
-.fujin__content01 {
+.fujin__main-slider {
   background-color: #fcf6f1;
   margin-bottom: 50px;
+  /* 次ページボタンのスタイル */
+  /* 前ページボタンのスタイル */
 }
 
-.fujin__content01 .swiper {
+.fujin__main-slider .swiper {
   width: 100%;
   max-width: 1290px;
 }
 
-.fujin__content01 .swiper .swiper-wrapper .swiper-slide {
+.fujin__main-slider .swiper .swiper-wrapper .swiper-slide {
   height: auto;
 }
 
-.fujin__content01 .swiper .swiper-wrapper .swiper-slide img {
+.fujin__main-slider .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  /* この一行を追加するだけ！ */
 }
 
-.fujin__content02 {
+.fujin__main-slider .swiper-pagination {
+  position: relative !important;
+  margin-top: -10px !important;
+  padding: 10px 0 !important;
+  background-color: #db3b1f !important;
+  bottom: 0 !important;
+}
+
+.fujin__main-slider .swiper-horizontal > .swiper-scrollbar {
+  display: none;
+}
+
+.fujin__main-slider .swiper-button-prev,
+.fujin__main-slider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  width: 48px;
+  /* ボタンの幅 */
+  height: 96px;
+  /* ボタンの高さ */
+  background-size: 48px 96px;
+  /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
+  margin-top: -48px;
+  /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+}
+
+.fujin__main-slider .swiper-button-next {
+  background-image: url(../image/fujin_icon02.png);
+}
+
+.fujin__main-slider .swiper-button-next:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: url(../image/fujin_icon02_hover.png);
+}
+
+.fujin__main-slider .swiper-button-prev {
+  background-image: url(../image/fujin_icon02.png);
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  /* 左右反転 */
+}
+
+.fujin__main-slider .swiper-button-prev:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: url(../image/fujin_icon02_hover.png);
+}
+
+.fujin__main-slider .swiper-button-prev:after, .fujin__main-slider .swiper-button-next:after {
+  display: none;
+}
+
+.fujin__main-slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.9);
+}
+
+.fujin__main-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #007aff;
+}
+
+.fujin__about {
   position: relative;
   padding: 60px 0;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02 {
+  .fujin__about {
     padding: 30px 0;
   }
 }
 
-.fujin__content02::before {
+.fujin__about::before {
   z-index: -1;
   position: absolute;
   content: '';
@@ -376,26 +125,26 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02::before {
+  .fujin__about::before {
     width: 95%;
   }
 }
 
-.fujin__content02__inner {
+.fujin__about__inner {
   max-width: 1000px;
   margin: 0 auto 50px;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__inner {
+  .fujin__about__inner {
     width: 100%;
     margin-bottom: 20px;
     padding: 0 10px;
   }
 }
 
-.fujin__content02__title {
+.fujin__about__title {
   position: relative;
   margin-bottom: 20px;
   font-size: 40px;
@@ -403,13 +152,13 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__title {
+  .fujin__about__title {
     margin-bottom: 10px;
     font-size: 32px;
   }
 }
 
-.fujin__content02__detail {
+.fujin__about__detail {
   font-size: 20px;
   font-weight: bold;
   line-height: 2;
@@ -417,28 +166,28 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__detail {
+  .fujin__about__detail {
     font-size: 18px;
   }
 }
 
-.fujin__content02__detail__title {
+.fujin__about__detail__title {
   font-size: 40px;
   color: #db3b1f;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__detail__title {
+  .fujin__about__detail__title {
     font-size: 28px;
   }
 }
 
-.fujin__content02__detail .marker {
+.fujin__about__detail .marker {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(0%, #fec187));
   background: linear-gradient(transparent 40%, #fec187 0%);
 }
 
-.fujin__content02__detail__box__image {
+.fujin__about__detail__box__image {
   width: 380px;
   height: 380px;
   border-radius: 50%;
@@ -448,29 +197,29 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__detail__box__image {
+  .fujin__about__detail__box__image {
     width: 200px;
     height: 200px;
     margin: -40px 0 0 10px;
   }
 }
 
-.fujin__content02__detail__box__image img {
+.fujin__about__detail__box__image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.fujin__content02__detail__box .clearfix {
+.fujin__about__detail__box .clearfix {
   clear: both;
 }
 
-.fujin__content02__box01 {
+.fujin__about__box01 {
   position: relative;
 }
 
-.fujin__content02__box02 {
+.fujin__about__box02 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,13 +236,13 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__box02 {
+  .fujin__about__box02 {
     height: 300px;
     margin-left: 30px;
   }
 }
 
-.fujin__content02__box03 {
+.fujin__about__box03 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,36 +257,36 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content02__box03 {
+  .fujin__about__box03 {
     height: 300px;
     margin-right: 30px;
   }
 }
 
-.fujin__content03 {
+.fujin__menu {
   padding: 60px 0;
   background-color: #fcf6f1;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03 {
+  .fujin__menu {
     padding: 30px 0;
   }
 }
 
-.fujin__content03__inner {
+.fujin__menu__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__inner {
+  .fujin__menu__inner {
     width: 100%;
   }
 }
 
-.fujin__content03__inner .tab-group {
+.fujin__menu__inner .tab-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,7 +296,7 @@ header nav {
   margin-bottom: 40px;
 }
 
-.fujin__content03__inner .tab {
+.fujin__menu__inner .tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,43 +318,43 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__inner .tab {
+  .fujin__menu__inner .tab {
     font-size: 14px;
   }
 }
 
-.fujin__content03__inner .tab:hover {
+.fujin__menu__inner .tab:hover {
   border: solid 1px #bd2611;
 }
 
-.fujin__content03__inner .panel {
+.fujin__menu__inner .panel {
   display: none;
 }
 
-.fujin__content03__inner .tab.is-active {
+.fujin__menu__inner .tab.is-active {
   background: #db3b1f;
   color: #FFF;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-.fujin__content03__inner .panel.is-show {
+.fujin__menu__inner .panel.is-show {
   display: block;
 }
 
-.fujin__content03__title {
+.fujin__menu__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__title {
+  .fujin__menu__title {
     font-size: 32px;
   }
 }
 
-.fujin__content03__box01 {
+.fujin__menu__box01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,7 +366,7 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01 {
+  .fujin__menu__box01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -625,11 +374,11 @@ header nav {
   }
 }
 
-.fujin__content03__box01 .icon {
+.fujin__menu__box01 .icon {
   position: relative;
 }
 
-.fujin__content03__box01 .icon::after {
+.fujin__menu__box01 .icon::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -646,7 +395,7 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01 .icon::after {
+  .fujin__menu__box01 .icon::after {
     width: 70px;
     height: 70px;
     top: -10px;
@@ -655,19 +404,19 @@ header nav {
   }
 }
 
-.fujin__content03__box01 li {
+.fujin__menu__box01 li {
   width: 45%;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01 li {
+  .fujin__menu__box01 li {
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
   }
 }
 
-.fujin__content03__box01 li img {
+.fujin__menu__box01 li img {
   width: 100%;
   margin-bottom: 40px;
   -webkit-box-shadow: 8px 8px #ccc;
@@ -675,24 +424,24 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01 li img {
+  .fujin__menu__box01 li img {
     margin-bottom: 20px;
     -webkit-box-shadow: 4px 4px #ccc;
             box-shadow: 4px 4px #ccc;
   }
 }
 
-.fujin__content03__box01 li:nth-of-type(n + 3) {
+.fujin__menu__box01 li:nth-of-type(n + 3) {
   margin-top: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01 li:nth-of-type(n + 2) {
+  .fujin__menu__box01 li:nth-of-type(n + 2) {
     margin-top: 30px;
   }
 }
 
-.fujin__content03__box01__title {
+.fujin__menu__box01__title {
   padding-bottom: 10px;
   text-align: center;
   font-size: 24px;
@@ -701,58 +450,58 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01__title {
+  .fujin__menu__box01__title {
     font-size: 18px;
   }
 }
 
-.fujin__content03__box01__title span {
+.fujin__menu__box01__title span {
   margin-left: 25px;
   display: inline-block;
   color: #db3b1f;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content03__box01__title span {
+  .fujin__menu__box01__title span {
     margin: 10px 0 0 0;
   }
 }
 
-.fujin__content04 {
+.fujin__access {
   padding: 60px 0;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04 {
+  .fujin__access {
     padding: 30px 0;
   }
 }
 
-.fujin__content04__inner {
+.fujin__access__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04__inner {
+  .fujin__access__inner {
     width: 100%;
   }
 }
 
-.fujin__content04__title {
+.fujin__access__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04__title {
+  .fujin__access__title {
     font-size: 32px;
   }
 }
 
-.fujin__content04__info__title01 {
+.fujin__access__info__title01 {
   margin-bottom: 30px;
   font-size: 36px;
   font-weight: bold;
@@ -760,115 +509,115 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04__info__title01 {
+  .fujin__access__info__title01 {
     margin-bottom: 20px;
     font-size: 30px;
   }
 }
 
-.fujin__content04__info__img01 {
+.fujin__access__info__img01 {
   width: 80%;
   margin: 0 auto 30px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04__info__img01 {
+  .fujin__access__info__img01 {
     margin-bottom: 20px;
   }
 }
 
-.fujin__content04__info__img01 img {
+.fujin__access__info__img01 img {
   width: 100%;
 }
 
-.fujin__content04__info table {
+.fujin__access__info table {
   margin-bottom: 50px;
 }
 
-.fujin__content04__info table, .fujin__content04__info td, .fujin__content04__info th {
+.fujin__access__info table, .fujin__access__info td, .fujin__access__info th {
   border: 1px solid #595959;
   border-collapse: collapse;
 }
 
-.fujin__content04__info td, .fujin__content04__info th {
+.fujin__access__info td, .fujin__access__info th {
   padding: 15px 10px;
   vertical-align: middle;
   font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content04__info td, .fujin__content04__info th {
+  .fujin__access__info td, .fujin__access__info th {
     font-size: 14px;
   }
 }
 
-.fujin__content04__info th {
+.fujin__access__info th {
   width: 30%;
   background: #F4F2F2;
 }
 
-.fujin__content04__info td {
+.fujin__access__info td {
   width: 70%;
 }
 
-.fujin__content05 {
+.fujin__notice {
   padding: 60px 0;
   background-color: #fcf6f1;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05 {
+  .fujin__notice {
     padding: 30px 0;
   }
 }
 
-.fujin__content05__inner {
+.fujin__notice__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__inner {
+  .fujin__notice__inner {
     width: 100%;
   }
 }
 
-.fujin__content05__title {
+.fujin__notice__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__title {
+  .fujin__notice__title {
     font-size: 32px;
   }
 }
 
-.fujin__content05__wrapper {
+.fujin__notice__wrapper {
   padding: 40px 0;
   background-image: url(../image/fujin_img01.png);
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper {
+  .fujin__notice__wrapper {
     padding: 30px 0;
   }
 }
 
-.fujin__content05__wrapper__content {
+.fujin__notice__wrapper__content {
   width: calc(100% - 150px);
   margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__content {
+  .fujin__notice__wrapper__content {
     width: calc(100% - 30px);
   }
 }
 
-.fujin__content05__wrapper__title {
+.fujin__notice__wrapper__title {
   margin-bottom: 30px;
   font-size: 36px;
   text-align: center;
@@ -876,12 +625,12 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__title {
+  .fujin__notice__wrapper__title {
     font-size: 30px;
   }
 }
 
-.fujin__content05__wrapper__box01 {
+.fujin__notice__wrapper__box01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,49 +647,49 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__box01 {
+  .fujin__notice__wrapper__box01 {
     font-size: 14px;
   }
 }
 
-.fujin__content05__wrapper__box01:hover {
+.fujin__notice__wrapper__box01:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform: translate3d(2px, 2px, 0);
           transform: translate3d(2px, 2px, 0);
 }
 
-.fujin__content05__wrapper__box01:hover .fujin__content05__wrapper__box01__text {
+.fujin__notice__wrapper__box01:hover .fujin__content05__wrapper__box01__text {
   text-decoration: underline;
 }
 
-.fujin__content05__wrapper__box01__day {
+.fujin__notice__wrapper__box01__day {
   color: #db3b1f;
   width: 130px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__box01__day {
+  .fujin__notice__wrapper__box01__day {
     width: 115px;
   }
 }
 
-.fujin__content05__wrapper__box01__text {
+.fujin__notice__wrapper__box01__text {
   width: calc(100% - 135px);
   margin-left: 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__box01__text {
+  .fujin__notice__wrapper__box01__text {
     text-decoration: underline;
   }
 }
 
-.fujin__content05__wrapper__box01:nth-of-type(n + 2) {
+.fujin__notice__wrapper__box01:nth-of-type(n + 2) {
   margin-top: 20px;
 }
 
-.fujin__content05__wrapper__info-detail {
+.fujin__notice__wrapper__info-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,12 +704,12 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__info-detail {
+  .fujin__notice__wrapper__info-detail {
     margin-top: 20px;
   }
 }
 
-.fujin__content05__wrapper__info-detail a {
+.fujin__notice__wrapper__info-detail a {
   background-color: #db3b1f;
   padding: 20px;
   border-radius: 10px;
@@ -971,53 +720,53 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content05__wrapper__info-detail a {
+  .fujin__notice__wrapper__info-detail a {
     padding: 10px;
     font-size: 14px;
   }
 }
 
-.fujin__content05__wrapper__info-detail a:hover {
+.fujin__notice__wrapper__info-detail a:hover {
   -webkit-transition: .6s;
   transition: .6s;
   background: #bd2611;
 }
 
-.fujin__content06 {
+.fujin__coupon {
   margin: 60px 0;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content06 {
+  .fujin__coupon {
     margin: 30px 0;
   }
 }
 
-.fujin__content06__inner {
+.fujin__coupon__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content06__inner {
+  .fujin__coupon__inner {
     width: 100%;
   }
 }
 
-.fujin__content06__title {
+.fujin__coupon__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content06__title {
+  .fujin__coupon__title {
     font-size: 32px;
   }
 }
 
-.fujin__content06__box01 {
+.fujin__coupon__box01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,7 +784,7 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01 {
+  .fujin__coupon__box01 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1043,18 +792,18 @@ header nav {
   }
 }
 
-.fujin__content06__box01__list {
+.fujin__coupon__box01__list {
   position: relative;
   width: calc(50% - 15px);
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list {
+  .fujin__coupon__box01__list {
     width: 100%;
   }
 }
 
-.fujin__content06__box01__list::after {
+.fujin__coupon__box01__list::after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -1071,14 +820,14 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list::after {
+  .fujin__coupon__box01__list::after {
     width: 10px;
     height: 10px;
     right: 20px;
   }
 }
 
-.fujin__content06__box01__list a {
+.fujin__coupon__box01__list a {
   display: block;
   height: 260px;
   padding: 20px 40px 0 20px;
@@ -1088,19 +837,19 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list a {
+  .fujin__coupon__box01__list a {
     height: auto;
     padding: 15px 30px 15px 15px;
   }
 }
 
-.fujin__content06__box01__list a:hover {
+.fujin__coupon__box01__list a:hover {
   -webkit-transition: .6s;
   transition: .6s;
   background: #bd2611;
 }
 
-.fujin__content06__box01__list__title {
+.fujin__coupon__box01__list__title {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -1108,12 +857,12 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list__title {
+  .fujin__coupon__box01__list__title {
     font-size: 16px;
   }
 }
 
-.fujin__content06__box01__list ul li dl {
+.fujin__coupon__box01__list ul li dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,12 +874,12 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list ul li dl {
+  .fujin__coupon__box01__list ul li dl {
     font-size: 14px;
   }
 }
 
-.fujin__content06__box01__list ul li dl dt {
+.fujin__coupon__box01__list ul li dl dt {
   width: 120px;
   padding: 3px 6px;
   text-align: center;
@@ -1138,112 +887,112 @@ header nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list ul li dl dt {
+  .fujin__coupon__box01__list ul li dl dt {
     width: 100px;
   }
 }
 
-.fujin__content06__box01__list ul li dl dd {
+.fujin__coupon__box01__list ul li dl dd {
   width: calc(100% - 140px);
   margin-left: 20px;
   color: #ffffff;
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list ul li dl dd {
+  .fujin__coupon__box01__list ul li dl dd {
     width: calc(100% - 110px);
     margin-left: 10px;
   }
 }
 
-.fujin__content06__box01__list ul li:nth-of-type(n + 2) {
+.fujin__coupon__box01__list ul li:nth-of-type(n + 2) {
   margin-top: 10px;
 }
 
-.fujin__content06__box01__list:nth-of-type(n + 3) {
+.fujin__coupon__box01__list:nth-of-type(n + 3) {
   margin-top: 40px;
 }
 
 @media screen and (max-width: 1000px) {
-  .fujin__content06__box01__list:nth-of-type(n + 2) {
+  .fujin__coupon__box01__list:nth-of-type(n + 2) {
     margin-top: 30px;
   }
 }
 
-.fujin__content07 {
+.fujin__job {
   padding: 60px 0;
   background-color: #fcf6f1;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07 {
+  .fujin__job {
     padding: 30px 0;
   }
 }
 
-.fujin__content07__inner {
+.fujin__job__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__inner {
+  .fujin__job__inner {
     width: 100%;
   }
 }
 
-.fujin__content07__title {
+.fujin__job__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__title {
+  .fujin__job__title {
     font-size: 32px;
   }
 }
 
-.fujin__content07__content01 {
+.fujin__job__content01 {
   border: 1px solid #db3b1f;
   border-radius: 5px;
 }
 
-.fujin__content07__top {
+.fujin__job__top {
   padding: 15px;
   background-color: #FCF3DE;
   color: #ff5301;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__top {
+  .fujin__job__top {
     padding: 10px;
   }
 }
 
-.fujin__content07__top__title {
+.fujin__job__top__title {
   margin-bottom: 10px;
   font-size: 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__top__title {
+  .fujin__job__top__title {
     font-size: 18px;
   }
 }
 
-.fujin__content07__top__subtitle {
+.fujin__job__top__subtitle {
   font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__top__subtitle {
+  .fujin__job__top__subtitle {
     font-size: 16px;
   }
 }
 
-.fujin__content07__middle {
+.fujin__job__middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,7 +1004,7 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__middle {
+  .fujin__job__middle {
     -webkit-align-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1265,52 +1014,52 @@ header nav {
   }
 }
 
-.fujin__content07__middle__image {
+.fujin__job__middle__image {
   width: 30%;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__middle__image {
+  .fujin__job__middle__image {
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
   }
 }
 
-.fujin__content07__middle__image img {
+.fujin__job__middle__image img {
   width: 100%;
 }
 
-.fujin__content07__middle__detail {
+.fujin__job__middle__detail {
   width: 66%;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__middle__detail {
+  .fujin__job__middle__detail {
     width: 100%;
   }
 }
 
-.fujin__content07__middle__detail table {
+.fujin__job__middle__detail table {
   margin-bottom: 20px;
   border-collapse: collapse;
   border: 1px solid #d7d7d7;
 }
 
-.fujin__content07__middle__detail table tbody tr th, .fujin__content07__middle__detail table tbody tr td {
+.fujin__job__middle__detail table tbody tr th, .fujin__job__middle__detail table tbody tr td {
   padding: 10px 5px;
   border-collapse: collapse;
   border: 1px solid #d7d7d7;
   vertical-align: middle;
 }
 
-.fujin__content07__middle__detail table tbody tr th {
+.fujin__job__middle__detail table tbody tr th {
   width: 60px;
   background-color: #efefef;
   text-align: center;
 }
 
-.fujin__content07__middle__detail__tag {
+.fujin__job__middle__detail__tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1319,7 +1068,7 @@ header nav {
   margin-bottom: 20px;
 }
 
-.fujin__content07__middle__detail__tag li {
+.fujin__job__middle__detail__tag li {
   margin: 3px;
   padding: 3px;
   color: #D08E45;
@@ -1327,21 +1076,21 @@ header nav {
   border: 1px solid #D08E45;
 }
 
-.fujin__content07__middle__detail__text {
+.fujin__job__middle__detail__text {
   font-size: 14px;
 }
 
-.fujin__content07__bottom {
+.fujin__job__bottom {
   padding: 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom {
+  .fujin__job__bottom {
     padding: 10px;
   }
 }
 
-.fujin__content07__bottom__box01 {
+.fujin__job__bottom__box01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1354,7 +1103,7 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01 {
+  .fujin__job__bottom__box01 {
     -webkit-align-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1363,31 +1112,31 @@ header nav {
   }
 }
 
-.fujin__content07__bottom__box01__tel-wrapper {
+.fujin__job__bottom__box01__tel-wrapper {
   width: 260px;
   font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01__tel-wrapper {
+  .fujin__job__bottom__box01__tel-wrapper {
     width: 100%;
     margin-bottom: 10px;
   }
 }
 
-.fujin__content07__bottom__box01__tel-wrapper span {
+.fujin__job__bottom__box01__tel-wrapper span {
   font-size: 18px;
   color: #a29167;
   text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01__tel-wrapper span {
+  .fujin__job__bottom__box01__tel-wrapper span {
     font-size: 16px;
   }
 }
 
-.fujin__content07__bottom__box01__btn-wrapper {
+.fujin__job__bottom__box01__btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1401,7 +1150,7 @@ header nav {
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01__btn-wrapper {
+  .fujin__job__bottom__box01__btn-wrapper {
     -webkit-align-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1411,19 +1160,19 @@ header nav {
   }
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--detail {
+.fujin__job__bottom__box01__btn-wrapper--detail {
   width: 110px;
   text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01__btn-wrapper--detail {
+  .fujin__job__bottom__box01__btn-wrapper--detail {
     width: 100%;
     margin-bottom: 10px;
   }
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--detail a {
+.fujin__job__bottom__box01__btn-wrapper--detail a {
   display: block;
   padding: 10px 0;
   color: #a29167;
@@ -1431,24 +1180,24 @@ header nav {
   border-radius: 5px;
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--detail a:hover {
+.fujin__job__bottom__box01__btn-wrapper--detail a:hover {
   -webkit-transition: .6s;
   transition: .6s;
   background-color: #f0e9dc;
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--subscription {
+.fujin__job__bottom__box01__btn-wrapper--subscription {
   width: 140px;
   text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__content07__bottom__box01__btn-wrapper--subscription {
+  .fujin__job__bottom__box01__btn-wrapper--subscription {
     width: 100%;
   }
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--subscription a {
+.fujin__job__bottom__box01__btn-wrapper--subscription a {
   display: block;
   padding: 15px 0;
   color: #ffffff;
@@ -1457,7 +1206,7 @@ header nav {
   border-radius: 5px;
 }
 
-.fujin__content07__bottom__box01__btn-wrapper--subscription a:hover {
+.fujin__job__bottom__box01__btn-wrapper--subscription a:hover {
   -webkit-transition: .6s;
   transition: .6s;
   background-color: #bd2611;
@@ -1579,102 +1328,5 @@ footer .fujin__copylight {
   color: #ffffff;
   font-size: 12px;
   text-align: center;
-}
-
-.swiper-pagination {
-  position: relative !important;
-  margin-top: -10px !important;
-  padding: 10px 0 !important;
-  background-color: #db3b1f !important;
-  bottom: 0 !important;
-}
-
-.swiper-horizontal > .swiper-scrollbar {
-  display: none;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
-  z-index: 10;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
-  width: 48px;
-  /* ボタンの幅 */
-  height: 96px;
-  /* ボタンの高さ */
-  background-size: 48px 96px;
-  /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
-  margin-top: -48px;
-  /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
-}
-
-/* 次ページボタンのスタイル */
-.swiper-button-next {
-  background-image: url(../image/fujin_icon02.png);
-}
-
-.swiper-button-next:hover {
-  -webkit-transition: .4s;
-  transition: .4s;
-  background-image: url(../image/fujin_icon02_hover.png);
-}
-
-/* 前ページボタンのスタイル */
-.swiper-button-prev {
-  background-image: url(../image/fujin_icon02.png);
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-  /* 左右反転 */
-}
-
-.swiper-button-prev:hover {
-  -webkit-transition: .4s;
-  transition: .4s;
-  background-image: url(../image/fujin_icon02_hover.png);
-}
-
-.swiper-button-prev:after, .swiper-button-next:after {
-  display: none;
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.9);
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #007aff;
-}
-
-@media screen and (max-width: 767px) {
-  .pcOnly {
-    display: none !important;
-  }
-}
-
-.spOnly {
-  display: none !important;
-}
-
-@media screen and (max-width: 767px) {
-  .spOnly {
-    display: block !important;
-  }
 }
 /*# sourceMappingURL=index.css.map */
