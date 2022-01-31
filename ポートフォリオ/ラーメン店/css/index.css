@@ -38,9 +38,6 @@
 .fujin__main-slider .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
   z-index: 10;
   cursor: pointer;
   display: -webkit-box;
@@ -58,9 +55,17 @@
   height: 96px;
   /* ボタンの高さ */
   background-size: 48px 96px;
-  /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
   margin-top: -48px;
-  /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__main-slider .swiper-button-prev,
+  .fujin__main-slider .swiper-button-next {
+    width: 36px;
+    height: 72px;
+    background-size: 36px 72px;
+    margin-top: -36px;
+  }
 }
 
 .fujin__main-slider .swiper-button-next {
@@ -456,7 +461,7 @@
 }
 
 .fujin__menu__box01__title span {
-  margin-left: 25px;
+  margin-left: 20px;
   display: inline-block;
   color: #db3b1f;
 }
@@ -1210,123 +1215,5 @@
   -webkit-transition: .6s;
   transition: .6s;
   background-color: #bd2611;
-}
-
-footer .fujin__footerWrapper {
-  padding: 50px 0;
-  background-color: #f1efe9;
-}
-
-@media screen and (max-width: 767px) {
-  footer .fujin__footerWrapper {
-    padding: 30px;
-  }
-}
-
-footer .fujin__inner {
-  width: 780px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 767px) {
-  footer .fujin__inner {
-    width: 100%;
-  }
-}
-
-footer .fujin__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  footer .fujin__list {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-bottom: 20px;
-  }
-}
-
-footer .fujin__list li {
-  margin: 5px 0;
-}
-
-footer .fujin__list li a {
-  display: block;
-  padding: 5px 15px;
-}
-
-footer .fujin__list li a:hover {
-  color: #db3b1f;
-  text-decoration: underline;
-}
-
-footer .fujin__list li:not(:last-child) {
-  position: relative;
-}
-
-footer .fujin__list li:not(:last-child)::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 2px;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background-color: #000000;
-}
-
-footer .fujin__sns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .fujin__sns li {
-  width: 35px;
-}
-
-@media screen and (max-width: 767px) {
-  footer .fujin__sns li {
-    width: 25px;
-  }
-}
-
-footer .fujin__sns li a {
-  display: block;
-}
-
-footer .fujin__sns li a:hover {
-  opacity: .6;
-}
-
-footer .fujin__sns li img {
-  width: 100%;
-}
-
-footer .fujin__sns li:nth-of-type(n + 2) {
-  margin-left: 15px;
-}
-
-footer .fujin__copylight {
-  padding: 10px 0;
-  background-color: #db3b1f;
-  color: #ffffff;
-  font-size: 12px;
-  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

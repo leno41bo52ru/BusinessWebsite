@@ -6,6 +6,7 @@ let mySwiper = new Swiper ('.swiper', {
   speed: 500,
   slidesPerView: 1,
   centeredSlides : true,
+  grabCursor: true,//スライダー画像ホバー時マウスカーソル変更
   //▼pc版▼
   breakpoints: {
     768: {
@@ -25,11 +26,11 @@ let mySwiper = new Swiper ('.swiper', {
     nextEl: '.swiper-button-next', //「次へボタン」要素の指定
     prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
   },
- 
-  //スクロールバー表示の設定
-  // scrollbar: { 
-  //   el: '.swiper-scrollbar', //要素の指定
-  // },
+  //自動スライド
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,//スライダーを操作しても自動スライド継続
+  },
 });
 
 //同じ記述なのでリファクタリングしたい

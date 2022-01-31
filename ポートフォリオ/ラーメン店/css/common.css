@@ -345,4 +345,122 @@ header .fujin__bottom__box01 li a {
   -webkit-transform: translateX(-50%) translateY(0) rotate(-45deg);
           transform: translateX(-50%) translateY(0) rotate(-45deg);
 }
+
+footer .fujin__footerWrapper {
+  padding: 50px 0;
+  background-color: #f1efe9;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__footerWrapper {
+    padding: 30px;
+  }
+}
+
+footer .fujin__inner {
+  width: 780px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__inner {
+    width: 100%;
+  }
+}
+
+footer .fujin__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 20px;
+  }
+}
+
+footer .fujin__list li {
+  margin: 5px 0;
+}
+
+footer .fujin__list li a {
+  display: block;
+  padding: 5px 15px;
+}
+
+footer .fujin__list li a:hover {
+  color: #db3b1f;
+  text-decoration: underline;
+}
+
+footer .fujin__list li:not(:last-child) {
+  position: relative;
+}
+
+footer .fujin__list li:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+}
+
+footer .fujin__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fujin__sns li {
+  width: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__sns li {
+    width: 25px;
+  }
+}
+
+footer .fujin__sns li a {
+  display: block;
+}
+
+footer .fujin__sns li a:hover {
+  opacity: .6;
+}
+
+footer .fujin__sns li img {
+  width: 100%;
+}
+
+footer .fujin__sns li:nth-of-type(n + 2) {
+  margin-left: 15px;
+}
+
+footer .fujin__copylight {
+  padding: 10px 0;
+  background-color: #db3b1f;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
 /*# sourceMappingURL=common.css.map */

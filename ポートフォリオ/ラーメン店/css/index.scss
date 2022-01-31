@@ -24,7 +24,6 @@
       padding: 10px 0!important;
       background-color: #db3b1f!important;
       bottom: 0 !important;
-      // height: 40px!important;
     }
     .swiper-horizontal>.swiper-scrollbar {
       display: none;
@@ -34,9 +33,6 @@
     .swiper-button-next {
     position: absolute;
     top: 50%;
-    width: calc(var(--swiper-navigation-size) / 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
     z-index: 10;
     cursor: pointer;
     display: flex;
@@ -45,8 +41,14 @@
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
     width: 48px; /* ボタンの幅 */
     height: 96px; /* ボタンの高さ */
-    background-size: 48px 96px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
-    margin-top: -48px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+    background-size: 48px 96px;
+    margin-top: -48px;
+    @media screen and (max-width:767px) {
+      width: 36px;
+      height: 72px;
+      background-size: 36px 72px;
+      margin-top: -36px;
+    }
     }
     /* 次ページボタンのスタイル */
     .swiper-button-next {
@@ -299,7 +301,6 @@
       }
       li {
         width: 45%;
-        // min-height: 230px;
         @media screen and (max-width:767px) {
           max-width: 640px;
           width: 100%;
@@ -333,7 +334,7 @@
           font-size: 18px;
         }
         span {
-          margin-left: 25px;
+          margin-left: 20px;
           display: inline-block;
           color: #db3b1f;
           @media screen and (max-width:767px) {
@@ -858,96 +859,6 @@
           }
         }
       }
-    }
-  }
-}
-
-footer {
-  .fujin {
-    &__footerWrapper {
-      padding: 50px 0;
-      background-color: #f1efe9;
-      @media screen and (max-width:767px) {
-        padding: 30px;
-      }
-    }
-    &__inner {
-      width: 780px;
-      margin: 0 auto;
-      @media screen and (max-width:767px) {
-        width: 100%;
-      }
-    }
-    &__list {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      @media screen and (max-width:767px) {
-        -webkit-justify-content: left;
-        justify-content: left;
-        margin-bottom: 20px;
-      }
-      li {
-        margin: 5px 0;
-        a {
-          display: block;
-          padding: 5px 15px;
-          &:hover {
-            color: #db3b1f;
-            text-decoration: underline;
-          }
-        }
-      }
-      li:not(:last-child) {
-        position: relative;
-        &::after {
-          position: absolute;
-          content: "";
-          display: inline-block;
-          width: 2px;
-          height: 100%;
-          top: 0;
-          right: 0;
-          background-color: #000000;
-        }
-      }
-    }
-    &__sns {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-align-items: center;
-      align-items: center;
-      li {
-        width: 35px;
-        @media screen and (max-width:767px) {
-          width: 25px;
-        }
-        a {
-          display: block;
-          &:hover {
-            opacity: .6;
-          }
-        }
-        img {
-          width: 100%;
-        }
-      }
-      li:nth-of-type(n + 2) {
-        margin-left: 15px;
-      }
-    }
-    &__copylight {
-      padding: 10px 0;
-      background-color: #db3b1f;
-      color: #ffffff;
-      font-size: 12px;
-      text-align: center;
     }
   }
 }
