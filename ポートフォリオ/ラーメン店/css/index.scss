@@ -306,6 +306,14 @@
           width: 100%;
           margin: 0 auto;
         }
+        &:nth-of-type(n + 3) {
+          margin-top: 50px;
+        }
+        &:nth-of-type(n + 2) {
+          @media screen and (max-width:767px) {
+            margin-top: 30px;
+          }
+        }
         img {
           width: 100%;
           margin-bottom: 40px;
@@ -314,14 +322,6 @@
             margin-bottom: 20px;
             box-shadow: 4px 4px #ccc;
           }
-        }
-      }
-      li:nth-of-type(n + 3) {
-        margin-top: 50px;
-      }
-      li:nth-of-type(n + 2) {
-        @media screen and (max-width:767px) {
-          margin-top: 30px;
         }
       }
       &__title {
@@ -469,6 +469,9 @@
         @media screen and (max-width:767px) {
           font-size: 14px;
         }
+        &:nth-of-type(n + 2) {
+          margin-top: 20px;
+        }
         &:hover {
           box-shadow: none;
           transform: translate3d(2px, 2px, 0);
@@ -490,9 +493,6 @@
             text-decoration: underline;
           }
         }
-      }
-      &__box01:nth-of-type(n + 2) {
-        margin-top: 20px;
       }
       &__info-detail {
         display: -webkit-flex;
@@ -569,6 +569,14 @@
         @media screen and (max-width:1000px) {
           width: 100%;
         }
+        &:nth-of-type(n + 3) {
+          margin-top: 40px;
+        }
+        &:nth-of-type(n + 2) {
+          @media screen and (max-width:1000px) {
+            margin-top: 30px;
+          }
+        }
         &::after {
           position: absolute;
           content: "";
@@ -614,6 +622,9 @@
         }
         ul {
           li {
+            &:nth-of-type(n + 2) {
+              margin-top: 10px;
+            }
             dl {
               display: -webkit-flex;
               display: flex;
@@ -644,17 +655,6 @@
               }
             }
           }
-          li:nth-of-type(n + 2) {
-            margin-top: 10px;
-          }
-        }
-      }
-      &__list:nth-of-type(n + 3) {
-        margin-top: 40px;
-      }
-      &__list:nth-of-type(n + 2) {
-        @media screen and (max-width:1000px) {
-          margin-top: 30px;
         }
       }
     }

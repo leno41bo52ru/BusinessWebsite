@@ -421,6 +421,16 @@
   }
 }
 
+.fujin__menu__box01 li:nth-of-type(n + 3) {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__menu__box01 li:nth-of-type(n + 2) {
+    margin-top: 30px;
+  }
+}
+
 .fujin__menu__box01 li img {
   width: 100%;
   margin-bottom: 40px;
@@ -433,16 +443,6 @@
     margin-bottom: 20px;
     -webkit-box-shadow: 4px 4px #ccc;
             box-shadow: 4px 4px #ccc;
-  }
-}
-
-.fujin__menu__box01 li:nth-of-type(n + 3) {
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01 li:nth-of-type(n + 2) {
-    margin-top: 30px;
   }
 }
 
@@ -657,6 +657,10 @@
   }
 }
 
+.fujin__notice__wrapper__box01:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
 .fujin__notice__wrapper__box01:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -688,10 +692,6 @@
   .fujin__notice__wrapper__box01__text {
     text-decoration: underline;
   }
-}
-
-.fujin__notice__wrapper__box01:nth-of-type(n + 2) {
-  margin-top: 20px;
 }
 
 .fujin__notice__wrapper__info-detail {
@@ -808,6 +808,16 @@
   }
 }
 
+.fujin__coupon__box01__list:nth-of-type(n + 3) {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .fujin__coupon__box01__list:nth-of-type(n + 2) {
+    margin-top: 30px;
+  }
+}
+
 .fujin__coupon__box01__list::after {
   position: absolute;
   content: "";
@@ -867,6 +877,10 @@
   }
 }
 
+.fujin__coupon__box01__list ul li:nth-of-type(n + 2) {
+  margin-top: 10px;
+}
+
 .fujin__coupon__box01__list ul li dl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,20 +921,6 @@
   .fujin__coupon__box01__list ul li dl dd {
     width: calc(100% - 110px);
     margin-left: 10px;
-  }
-}
-
-.fujin__coupon__box01__list ul li:nth-of-type(n + 2) {
-  margin-top: 10px;
-}
-
-.fujin__coupon__box01__list:nth-of-type(n + 3) {
-  margin-top: 40px;
-}
-
-@media screen and (max-width: 1000px) {
-  .fujin__coupon__box01__list:nth-of-type(n + 2) {
-    margin-top: 30px;
   }
 }
 

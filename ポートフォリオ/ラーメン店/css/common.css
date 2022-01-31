@@ -184,9 +184,8 @@ header .fujin__top__box01__right {
             transform: translate(-50%, -50%);
     text-align: center;
   }
-  header .fujin__top__box01 .nav-item {
-    margin-right: 0;
-    margin-bottom: 40px;
+  header .fujin__top__box01 .nav-item:nth-of-type(n + 2) {
+    margin-top: 40px;
   }
   header .fujin__top__box01 .nav-item a {
     color: #ffffff;
@@ -440,6 +439,10 @@ footer .fujin__sns li {
   }
 }
 
+footer .fujin__sns li:nth-of-type(n + 2) {
+  margin-left: 15px;
+}
+
 footer .fujin__sns li a {
   display: block;
 }
@@ -450,10 +453,6 @@ footer .fujin__sns li a:hover {
 
 footer .fujin__sns li img {
   width: 100%;
-}
-
-footer .fujin__sns li:nth-of-type(n + 2) {
-  margin-left: 15px;
 }
 
 footer .fujin__copylight {
