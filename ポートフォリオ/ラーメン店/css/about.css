@@ -5,6 +5,7 @@
   background-image: url(../image/fujin_img24.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fujin__about__MainVisual__title {
