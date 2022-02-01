@@ -132,6 +132,7 @@
 @media screen and (max-width: 767px) {
   .fujin__about::before {
     width: 95%;
+    height: 620px;
   }
 }
 
@@ -152,32 +153,21 @@
 .fujin__about__title {
   position: relative;
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: serif;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__about__title {
     margin-bottom: 10px;
-    font-size: 32px;
-  }
-}
-
-.fujin__about__detail {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 2;
-  color: #db3b1f;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__about__detail {
-    font-size: 18px;
+    font-size: 36px;
   }
 }
 
 .fujin__about__detail__title {
   font-size: 40px;
+  font-weight: bold;
   color: #db3b1f;
 }
 
@@ -214,6 +204,61 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.fujin__about__detail__box__text {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+  color: #db3b1f;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__about__detail__box__text {
+    font-size: 18px;
+  }
+}
+
+.fujin__about__detail__box__link {
+  position: relative;
+  padding: 10px 15px 10px 35px;
+  background-color: #db3b1f;
+  border-radius: 10px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__about__detail__box__link {
+    padding: 10px 15px 10px 30px;
+    font-size: 14px;
+  }
+}
+
+.fujin__about__detail__box__link::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 15px;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__about__detail__box__link::after {
+    border-width: 7px 0 7px 7px;
+  }
+}
+
+.fujin__about__detail__box__link:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background-color: #bd2611;
 }
 
 .fujin__about__detail__box .clearfix {
@@ -268,110 +313,29 @@
   }
 }
 
-.fujin__menu {
-  padding: 60px 0;
-  background-color: #fcf6f1;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu {
-    padding: 30px 0;
-  }
-}
-
-.fujin__menu__inner {
+.fujin__card__inner {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__menu__inner {
+  .fujin__card__inner {
     width: 100%;
   }
 }
 
-.fujin__menu__inner .tab-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  margin-bottom: 40px;
-}
-
-.fujin__menu__inner .tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 33.3%;
-  padding: 10px 5px;
-  list-style: none;
-  border: solid 1px #CCC;
-  text-align: center;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__inner .tab {
-    font-size: 14px;
-  }
-}
-
-.fujin__menu__inner .tab:hover {
-  border: solid 1px #bd2611;
-}
-
-.fujin__menu__inner .panel {
-  display: none;
-}
-
-.fujin__menu__inner .tab.is-active {
-  background: #db3b1f;
-  color: #FFF;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.fujin__menu__inner .panel.is-show {
-  display: block;
-}
-
-.fujin__menu__title {
-  margin-bottom: 30px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__title {
-    font-size: 32px;
-  }
-}
-
-.fujin__menu__box01 {
+.fujin__card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 767px) {
-  .fujin__menu__box01 {
+  .fujin__card__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -379,97 +343,67 @@
   }
 }
 
-.fujin__menu__box01 .icon {
-  position: relative;
+.fujin__card__list li {
+  width: 30%;
 }
 
-.fujin__menu__box01 .icon::after {
+@media screen and (max-width: 767px) {
+  .fujin__card__list li {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .fujin__card__list li:nth-of-type(n + 2) {
+    margin-top: 40px;
+  }
+}
+
+.fujin__card__list li a {
+  display: block;
+  padding: 10px;
+  background-color: #f1efe9;
+  -webkit-box-shadow: 4px 4px 16px 2px rgba(10, 10, 10, 0.2), 0px 0px 0px 1px rgba(10, 10, 10, 0.04);
+          box-shadow: 4px 4px 16px 2px rgba(10, 10, 10, 0.2), 0px 0px 0px 1px rgba(10, 10, 10, 0.04);
+}
+
+.fujin__card__list li a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 4px 4px 16px 2px rgba(10, 10, 10, 0.1), 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+          box-shadow: 4px 4px 16px 2px rgba(10, 10, 10, 0.1), 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+}
+
+.fujin__card__list__title {
+  position: relative;
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: serif;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__card__list__title {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+}
+
+.fujin__card__list__title::after {
   position: absolute;
   content: "";
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  top: -30px;
-  right: -30px;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
-  background-image: url(../image/fujin_icon03.png);
-  background-size: 100px,100px;
-  background-position: center,center;
-  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 14px 14px 0;
+  border-color: transparent #db3b1f transparent transparent;
 }
 
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01 .icon::after {
-    width: 70px;
-    height: 70px;
-    top: -10px;
-    right: -10px;
-    background-size: 70px,70px;
-  }
-}
-
-.fujin__menu__box01 li {
-  width: 45%;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01 li {
-    max-width: 640px;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-.fujin__menu__box01 li:nth-of-type(n + 3) {
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01 li:nth-of-type(n + 2) {
-    margin-top: 30px;
-  }
-}
-
-.fujin__menu__box01 li img {
+.fujin__card__list__image img {
   width: 100%;
-  margin-bottom: 40px;
-  -webkit-box-shadow: 8px 8px #ccc;
-          box-shadow: 8px 8px #ccc;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01 li img {
-    margin-bottom: 20px;
-    -webkit-box-shadow: 4px 4px #ccc;
-            box-shadow: 4px 4px #ccc;
-  }
-}
-
-.fujin__menu__box01__title {
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  border-bottom: 1px solid #db3b1f;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01__title {
-    font-size: 18px;
-  }
-}
-
-.fujin__menu__box01__title span {
-  margin-left: 20px;
-  display: inline-block;
-  color: #db3b1f;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__menu__box01__title span {
-    margin: 10px 0 0 0;
-  }
 }
 
 .fujin__access {
@@ -496,13 +430,14 @@
 
 .fujin__access__title {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: serif;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__access__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -590,13 +525,14 @@
 
 .fujin__notice__title {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: serif;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__notice__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -715,8 +651,9 @@
 }
 
 .fujin__notice__wrapper__info-detail a {
+  position: relative;
   background-color: #db3b1f;
-  padding: 20px;
+  padding: 10px 15px 10px 35px;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
@@ -726,8 +663,27 @@
 
 @media screen and (max-width: 767px) {
   .fujin__notice__wrapper__info-detail a {
-    padding: 10px;
+    padding: 10px 15px 10px 30px;
     font-size: 14px;
+  }
+}
+
+.fujin__notice__wrapper__info-detail a::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 15px;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__notice__wrapper__info-detail a::after {
+    border-width: 7px 0 7px 7px;
   }
 }
 
@@ -761,13 +717,14 @@
 
 .fujin__coupon__title {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: serif;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__coupon__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
@@ -949,13 +906,14 @@
 
 .fujin__job__title {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+  font-family: serif;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__job__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 

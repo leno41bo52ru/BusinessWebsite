@@ -53,8 +53,8 @@
       </h1>
       <div class="fujin__top__box01__right pcOnly">
         <div class="fujin__top__box01__contact">
-        ご予約・お問い合わせはこちら<br>
-        <span>01-2345-6789</span>
+          ご予約・お問い合わせはこちら<br>
+          <span><a href="tel:000-000-0000">000-000-0000</a></span>
         </div>
         <a class="fujin__top__box01__reserve" href="#">
           お店を選んで<br>
@@ -65,14 +65,23 @@
         <div class="nav-wrapper">
           <!-- ②ナビゲーションメニュー -->
           <nav class="header-nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="./about.html">こだわり</a></li>
-              <li class="nav-item"><a href="./menu.html">お品書き</a></li>
-              <li class="nav-item"><a href="./access.html">店舗情報</a></li>
-              <li class="nav-item"><a href="./notice.html">お知らせ</a></li>
-              <li class="nav-item"><a href="./coupon.html">クーポン</a></li>
-              <li class="nav-item"><a href="./job.html">アルバイト</a></li>
-            </ul>
+            <div class="header-nav__content">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="./about.html">こだわり</a></li>
+                <li class="nav-item"><a href="./menu.html">お品書き</a></li>
+                <li class="nav-item"><a href="./access.html">店舗情報</a></li>
+                <li class="nav-item"><a href="./notice.html">お知らせ</a></li>
+                <li class="nav-item"><a href="./coupon.html">クーポン</a></li>
+                <li class="nav-item"><a href="./job.html">アルバイト</a></li>
+              </ul>
+              <div class="fujin__top__box01__contact">
+                ご予約・お問い合わせはこちら<br>
+                <span><a href="tel:000-000-0000">000-000-0000</a></span>
+              </div>
+              <a class="fujin__top__box01__reserve" href="#">
+                お店を選んで予約する
+              </a>
+            </div>
           </nav>
         </div>
         <button class="burger-btn">
@@ -132,6 +141,7 @@
         <div class="fujin__about__detail__box">
           <div class="fujin__about__detail__box__image"><img src="image/fujin_img05.jpg" alt="豚骨の画像"></div>
           <p class="fujin__about__detail__box__text">赤身と脂身のバランスが良い豚バラ肉を<br>醤油ベースのタレでじっくり煮込んでいます。<br>FUJINラーメンの自信作で<span class="marker">豚の頭の骨と水のみを高温で炊き上げ<br>旨みを極限まで凝縮した頭骨100%の濃厚スープ</span>です。</p>
+          <a class="fujin__about__detail__box__link" href="./about.html">詳しくはこちら</a>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -139,106 +149,38 @@
     <div class="fujin__about__box01">
       <div class="fujin__about__box02">
       </div>
-      <!-- <div class="fujin__about__box03">
-      </div> -->
-      <!-- <img src="image/fujin_img05.jpg" alt="こだわり写真"> -->
     </div>
   </section>
 
-  <section class="fujin__menu">
-    <div class="fujin__menu__inner">
-      <h2 class="fujin__menu__title">お品書き</h2>
-      <div class="tab-panel">
-        <!--タブ-->
-        <ul class="tab-group">
-          <li class="tab tab-A is-active">ラーメン</li>
-          <li class="tab tab-B">サイド<br class="spOnly">メニュー</li>
-          <li class="tab tab-C">セット<br class="spOnly">メニュー</li>
-        </ul>
-        
-        <!--タブを切り替えて表示するコンテンツ-->
-        <div class="panel tab-A is-show">
-          <ul class="fujin__menu__box01">
-            <li>
-              <img src="image/fujin_img06.jpg" alt="醤油ラーメン">
-              <h3 class="fujin__menu__box01__title">醤油ラーメン<br class="spOnly"><span>￥650</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img07.jpg" alt="味玉ラーメン">
-              <h3 class="fujin__menu__box01__title">味玉ラーメン<br class="spOnly"><span>￥750</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img08.jpg" alt="チャーシュースタミナラーメン">
-              <h3 class="fujin__menu__box01__title">チャーシュースタミナラーメン<br class="spOnly"><span>￥790</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img09.jpg" alt="海老ラーメン">
-              <h3 class="fujin__menu__box01__title">海老ラーメン<br class="spOnly"><span>￥800</span></h3>
-            </li>
-            <li class="icon">
-              <img src="image/fujin_img10.jpg" alt="FUJINラーメン">
-              <h3 class="fujin__menu__box01__title">FUJINラーメン<br class="spOnly"><span>￥750</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img11.jpg" alt="ネギラーメン">
-              <h3 class="fujin__menu__box01__title">ネギラーメン<br class="spOnly"><span>￥850</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img12.jpg" alt="博多高菜ラーメン">
-              <h3 class="fujin__menu__box01__title">博多高菜ラーメン<br class="spOnly"><span>￥670</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img13.jpg" alt="チャーシューネギラーメン">
-              <h3 class="fujin__menu__box01__title">チャーシューネギラーメン<br class="spOnly"><span>￥880</span></h3>
-            </li>
-            <li>
-              <img src="image/fujin_img14.jpg" alt="味噌バターラーメン">
-              <h3 class="fujin__menu__box01__title">味噌バターラーメン<br class="spOnly"><span>￥850</span></h3>
-            </li>
-          </ul>
-        </div>
-          <div class="panel tab-B">
-            <ul class="fujin__menu__box01">
-              <li>
-                <img src="image/fujin_img15.jpg" alt="餃子">
-                <h3 class="fujin__menu__box01__title">餃子<br class="spOnly"><span>￥350</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img16.jpg" alt="唐揚げ">
-                <h3 class="fujin__menu__box01__title">唐揚げ<br class="spOnly"><span>￥350</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img17.jpg" alt="ミニチャーハン">
-                <h3 class="fujin__menu__box01__title">ミニチャーハン<br class="spOnly"><span>￥300</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img18.jpg" alt="ワンタンスープ">
-                <h3 class="fujin__menu__box01__title">ワンタンスープ<br class="spOnly"><span>￥300</span></h3>
-              </li>
-            </ul>
-          </div>
-          <div class="panel tab-C">
-            <ul class="fujin__menu__box01">
-              <li>
-                <img src="image/fujin_img19.jpg" alt="唐揚げセット">
-                <h3 class="fujin__menu__box01__title">唐揚げセット<br class="spOnly"><span>￥900</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img20.jpg" alt="ミニチャーハンセット">
-                <h3 class="fujin__menu__box01__title">ミニチャーハンセット<br class="spOnly"><span>￥900</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img21.jpg" alt="餃子セット">
-                <h3 class="fujin__menu__box01__title">餃子セット<br class="spOnly"><span>￥850</span></h3>
-              </li>
-              <li>
-                <img src="image/fujin_img22.jpg" alt="ワンタンスープセット">
-                <h3 class="fujin__menu__box01__title">ワンタンスープセット<br class="spOnly"><span>￥850</span></h3>
-              </li>
-            </ul>
-          </div>
-      </div>
-
+  <section class="fujin__card">
+    <div class="fujin__card__inner">
+      <!-- <h2 class="fujin__menu__title">お品書き</h2> -->
+      <ul class="fujin__card__list">
+        <li>
+          <a href="./menu.html">
+            <h2 class="fujin__card__list__title">お品書き</h2>
+            <div class="fujin__card__list__image">
+              <img src="image/fujin_img10.jpg" alt="ラーメンの画像">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./access.html">
+            <h2 class="fujin__card__list__title">店舗情報</h2>
+            <div class="fujin__card__list__image">
+              <img src="image/fujin_img23.png" alt="店舗の画像">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./coupon.html">
+            <h2 class="fujin__card__list__title">クーポン</h2>
+            <div class="fujin__card__list__image">
+              <img src="image/fujin_img30.png" alt="クーポンの画像">
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 

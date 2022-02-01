@@ -127,26 +127,29 @@ header {
             transition: all .5s;
             z-index: 2;
           }
-          .header-nav{
+          .header-nav {
             width: 100%;
             height: 100%;
             background-image: url(../image/fujin_img01.png);
             z-index: 2;
+            &__content {
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              text-align: center;
+            }
           }
           .nav-list{
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            text-align: center;
-          }
-          .nav-item {
-            &:nth-of-type(n + 2) {
-              margin-top: 40px;
-            }
-            a {
-              color: #ffffff;
+            margin-bottom: 50px;
+            .nav-item {
+              &:nth-of-type(n + 2) {
+                margin-top: 40px;
+              }
+              a {
+                color: #ffffff;
+              }
             }
           }
     
@@ -180,11 +183,17 @@ header {
           text-align: center;
           font-size: 14px;
           color: #ffffff;
+          @media screen and (max-width:767px) {
+            margin-bottom: 30px;
+          }
           span {
             position: relative;
             padding-left: 30px;
             font-size: 18px;
             line-height: 2.0;
+            @media screen and (max-width:767px) {
+              font-size: 16px;
+            }
             &::after {
               position: absolute;
               content: "";
@@ -196,6 +205,9 @@ header {
               height: 25px;
               background: url(../image/fujin_icon01.png) no-repeat 0 0;
               background-size: 25px 25px;
+            }
+            a {
+              text-decoration: underline;
             }
           }
         }
@@ -209,6 +221,9 @@ header {
           text-align: center;
           font-weight: bold;
           color: #ffffff;
+          @media screen and (max-width:767px) {
+            margin: 0 auto;
+          }
           &:hover {
             transition: .6s;
             background: #bd2611;

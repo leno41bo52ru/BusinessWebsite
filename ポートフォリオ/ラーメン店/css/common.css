@@ -175,7 +175,7 @@ header .fujin__top__box01__right {
     background-image: url(../image/fujin_img01.png);
     z-index: 2;
   }
-  header .fujin__top__box01 .nav-list {
+  header .fujin__top__box01 .header-nav__content {
     display: block;
     position: absolute;
     top: 50%;
@@ -184,10 +184,13 @@ header .fujin__top__box01__right {
             transform: translate(-50%, -50%);
     text-align: center;
   }
-  header .fujin__top__box01 .nav-item:nth-of-type(n + 2) {
+  header .fujin__top__box01 .nav-list {
+    margin-bottom: 50px;
+  }
+  header .fujin__top__box01 .nav-list .nav-item:nth-of-type(n + 2) {
     margin-top: 40px;
   }
-  header .fujin__top__box01 .nav-item a {
+  header .fujin__top__box01 .nav-list .nav-item a {
     color: #ffffff;
   }
   header .fujin__top__box01 .nav-wrapper.fade {
@@ -220,11 +223,23 @@ header .fujin__top__box01__contact {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__contact {
+    margin-bottom: 30px;
+  }
+}
+
 header .fujin__top__box01__contact span {
   position: relative;
   padding-left: 30px;
   font-size: 18px;
   line-height: 2.0;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__contact span {
+    font-size: 16px;
+  }
 }
 
 header .fujin__top__box01__contact span::after {
@@ -241,6 +256,10 @@ header .fujin__top__box01__contact span::after {
   background-size: 25px 25px;
 }
 
+header .fujin__top__box01__contact span a {
+  text-decoration: underline;
+}
+
 header .fujin__top__box01__reserve {
   margin-left: 25px;
   padding: 15px 10px;
@@ -252,6 +271,12 @@ header .fujin__top__box01__reserve {
   text-align: center;
   font-weight: bold;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__reserve {
+    margin: 0 auto;
+  }
 }
 
 header .fujin__top__box01__reserve:hover {

@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
 
   <!-- アイコン -->
   <link rel="shortcut icon" href="image/favicon.ico" />
@@ -45,7 +45,7 @@
 
  <body>
  <!----- header----->
-<header>
+ <header>
   <div class="fujin__top">
     <div class="fujin__top__box01">
       <h1 class="fujin__top__box01__logo">
@@ -53,10 +53,10 @@
       </h1>
       <div class="fujin__top__box01__right pcOnly">
         <div class="fujin__top__box01__contact">
-        ご予約・お問い合わせはこちら<br>
-        <span>01-2345-6789</span>
+          ご予約・お問い合わせはこちら<br>
+          <span><a href="tel:000-000-0000">000-000-0000</a></span>
         </div>
-        <a class="fujin__top__box01__reserve">
+        <a class="fujin__top__box01__reserve" href="#">
           お店を選んで<br>
           予約する
         </a>
@@ -65,14 +65,23 @@
         <div class="nav-wrapper">
           <!-- ②ナビゲーションメニュー -->
           <nav class="header-nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="/about.html">こだわり</a></li>
-              <li class="nav-item"><a href="/menu.html">お品書き</a></li>
-              <li class="nav-item"><a href="/access.html">店舗情報</a></li>
-              <li class="nav-item"><a href="/notice.html">お知らせ</a></li>
-              <li class="nav-item"><a href="/coupon.html">クーポン</a></li>
-              <li class="nav-item"><a href="/job.html">アルバイト</a></li>
-            </ul>
+            <div class="header-nav__content">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="./about.html">こだわり</a></li>
+                <li class="nav-item"><a href="./menu.html">お品書き</a></li>
+                <li class="nav-item"><a href="./access.html">店舗情報</a></li>
+                <li class="nav-item"><a href="./notice.html">お知らせ</a></li>
+                <li class="nav-item"><a href="./coupon.html">クーポン</a></li>
+                <li class="nav-item"><a href="./job.html">アルバイト</a></li>
+              </ul>
+              <div class="fujin__top__box01__contact">
+                ご予約・お問い合わせはこちら<br>
+                <span><a href="tel:000-000-0000">000-000-0000</a></span>
+              </div>
+              <a class="fujin__top__box01__reserve" href="#">
+                お店を選んで予約する
+              </a>
+            </div>
           </nav>
         </div>
         <button class="burger-btn">
@@ -86,12 +95,12 @@
   </div>
    <nav class="fujin__bottom">
      <ul class="fujin__bottom__box01 pcOnly">
-       <li><a href="/about.html">こだわり</a></li>
-       <li><a href="/menu.html">お品書き</a></li>
-       <li><a href="/access.html">店舗情報</a></li>
-       <li><a href="/notice.html">お知らせ</a></li>
-       <li><a href="/coupon.html">クーポン</a></li>
-       <li><a href="/job.html">アルバイト</a></li>
+       <li><a href="./about.html">こだわり</a></li>
+       <li><a href="./menu.html">お品書き</a></li>
+       <li><a href="./access.html">店舗情報</a></li>
+       <li><a href="./notice.html">お知らせ</a></li>
+       <li><a href="./coupon.html">クーポン</a></li>
+       <li><a href="./job.html">アルバイト</a></li>
      </ul>
    </nav>
 </header>
@@ -102,25 +111,47 @@
   <div class="upper__wrapper">
     <div class="upper__button"></div>
   </div>
-
   <section class="fujin__about">
+    <div class="fujin__about__MainVisual">
+      <h2 class="fujin__about__MainVisual__title">こだわり</h2>
+    </div>
+    <div class="fujin__about__title">スープへのこだわり</div>
     <div class="fujin__about__inner">
-      <h2 class="fujin__about__title">こだわり</h2>
-      <div class="fujin__about__detail">
-        <h3 class="fujin__about__detail__title">特性豚骨スープ</h3>
-        <div class="fujin__about__detail__box">
-          <div class="fujin__about__detail__box__image"><img src="image/fujin_img05.jpg" alt="豚骨の画像"></div>
-          <p class="fujin__about__detail__box__text">赤身と脂身のバランスが良い豚バラ肉を<br>醤油ベースのタレでじっくり煮込んでいます。<br>FUJINラーメンの自信作で<span class="marker">豚の頭の骨と水のみを高温で炊き上げ<br>旨みを極限まで凝縮した頭骨100%の濃厚スープ</span>です。</p>
-          <div class="clearfix"></div>
-        </div>
+      <div class="fujin__about__box">
+        <p class="fujin__about__box__text">
+          赤身と脂身のバランスが良い豚バラ肉を醤油ベースのタレでじっくり煮込んでいます。<br>
+          豚の頭の骨と水のみを高温で炊き上げ、旨みを極限まで凝縮した頭骨100%の濃厚スープです。<br>
+          掛けられるだけの手間を掛け、こだわれるだけ材料にこだわり、約１日がかりでていねいに作っているので絶品な一品となっております。<br>
+          味わい深い濃厚スープに虜になること間違いなしです。
+        </p>
+        <div class="fujin__about__box__image">
+          <img src="image/fujin_img27.jpg" alt="豚骨スープの画像"></div>
       </div>
     </div>
-    <div class="fujin__about__box01">
-      <div class="fujin__about__box02">
+    <div class="fujin__about__title">麺へのこだわり</div>
+    <div class="fujin__about__inner">
+      <div class="fujin__about__box fujin__about__box--reverse">
+        <p class="fujin__about__box__text">
+          使用する小麦は、たんぱく質含有量が13％以上で、グルテンも強靭な、豪州産の＜プライムハード＞を贅沢に使用。<br>
+          あの有名なグルメ漫画「美味しんぼう」で推薦されていた中華麺用小麦の最高峰を、隣接する麺工房で、その日の湿度や気温に合わせながら手打ち。腰のある細麺の食感とスープとの絡み具合は、まさに絶品の一言です。<br>
+          麺が少し縮れているため、濃厚な豚骨スープによく絡みあいより美味しさを引き立たせてくれます。
+        </p>
+        <div class="fujin__about__box__image">
+          <img src="image/fujin_img28.jpg" alt="麺の画像"></div>
       </div>
-      <!-- <div class="fujin__about__box03">
-      </div> -->
-      <!-- <img src="image/fujin_img05.jpg" alt="こだわり写真"> -->
+    </div>
+    <div class="fujin__about__title">チャーシューへのこだわり</div>
+    <div class="fujin__about__inner">
+      <div class="fujin__about__box">
+        <p class="fujin__about__box__text">
+          できるだけ産地や季節にこだわって、餌にもこだわって、肉そのものの旨みがある豚を選らんでいます。<br>
+          さらに、醤油にもこだわって、同じものを注ぎ足して使い続けています。<br>
+          脂身の美味しさも残しつつ、身の引きしまった弾力のある食べ応えにもこだわりました。<br>
+          もちろん、材料はすべて無添加です。<br>
+        </p>
+        <div class="fujin__about__box__image">
+          <img src="image/fujin_img29.jpg" alt="チャーシューの画像"></div>
+      </div>
     </div>
   </section>
 </main>
@@ -131,12 +162,12 @@
    <div class="fujin__footerWrapper">
      <div class="fujin__inner">
        <ul class="fujin__list">
-        <li><a href="/about.html">こだわり</a></li>
-        <li><a href="/menu.html">お品書き</a></li>
-        <li><a href="/access.html">店舗情報</a></li>
-        <li><a href="/notice.html">お知らせ</a></li>
-        <li><a href="/coupon.html">クーポン</a></li>
-        <li><a href="/job.html">アルバイト</a></li>
+        <li><a href="./about.html">こだわり</a></li>
+        <li><a href="./menu.html">お品書き</a></li>
+        <li><a href="./access.html">店舗情報</a></li>
+        <li><a href="./notice.html">お知らせ</a></li>
+        <li><a href="./coupon.html">クーポン</a></li>
+        <li><a href="./job.html">アルバイト</a></li>
       </ul>
       <ul class="fujin__sns">
         <li><a href="#"><img src="image/fujin_icon_twitter.png" alt="twitterアイコン"></a></li>
