@@ -8,6 +8,16 @@
   background-position: center;
 }
 
+.fujin__about__MainVisual::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .2;
+}
+
 .fujin__about__MainVisual__title {
   position: absolute;
   display: inline-block;
@@ -19,6 +29,7 @@
   color: #ffffff;
   font-weight: bold;
   font-family: serif;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
