@@ -93,7 +93,7 @@
       }
       th {
         width: 150px;
-        background: #F4F2F2;
+        background: #f1efe9;
         @media screen and (max-width:767px) {
           width: 120px;
         }
@@ -108,10 +108,13 @@
         margin-bottom: 50px;
         &__title {
           font-size: 18px;
-          padding: 10px;
+          padding: 10px 20px;
           color: #ffffff;
           font-weight: bold;
           background-image: url(../image/fujin_img01.png);
+          @media screen and (max-width:767px) {
+            padding: 10px;
+          }
         }
         &__box01 {
           display: -webkit-flex;
@@ -141,6 +144,7 @@
             width: 55%;
             @media screen and (max-width:767px) {
               width: 100%;
+              font-size: 14px;
             }
           }
         }

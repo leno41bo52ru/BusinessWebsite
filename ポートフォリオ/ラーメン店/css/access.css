@@ -126,7 +126,7 @@
 
 .fujin__access__info th {
   width: 150px;
-  background: #F4F2F2;
+  background: #f1efe9;
 }
 
 @media screen and (max-width: 767px) {
@@ -151,10 +151,16 @@
 
 .fujin__access__info__staff__title {
   font-size: 18px;
-  padding: 10px;
+  padding: 10px 20px;
   color: #ffffff;
   font-weight: bold;
   background-image: url(../image/fujin_img01.png);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__access__info__staff__title {
+    padding: 10px;
+  }
 }
 
 .fujin__access__info__staff__box01 {
@@ -202,6 +208,7 @@
 @media screen and (max-width: 767px) {
   .fujin__access__info__staff__box01__detail {
     width: 100%;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=access.css.map */

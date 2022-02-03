@@ -54,7 +54,7 @@ $(function () {
 });
 
 //タブ切り替え
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
 	// タブに対してクリックイベントを適用
 	const tabs = document.getElementsByClassName('tab');
 	for(let i = 0; i < tabs.length; i++) {
@@ -74,6 +74,53 @@ document.addEventListener('DOMContentLoaded', function(){
 	};
 }, false);
 
+//一番上までスクロールする。
 $(".upper__wrapper").click(function(){
   $('html,body').animate({'scrollTop':0},500);
+});
+
+//クーポン券フェードイン/フェードアウト
+$(function() {
+  // クーポンをクリックしたらフェードイン
+  $('#coupon01').click(function() {
+    $('#coupon01-fadeIn').addClass('show');
+    $('body').addClass('fixed');
+    $('body').addClass('noscroll');
+  });
+  $('#coupon02').click(function() {
+    $('#coupon02-fadeIn').addClass('show');
+    $('body').addClass('fixed');
+    $('body').addClass('noscroll');
+  });
+  $('#coupon03').click(function() {
+    $('#coupon03-fadeIn').addClass('show');
+    $('body').addClass('fixed');
+    $('body').addClass('noscroll');
+  });
+  $('#coupon04').click(function() {
+    $('#coupon04-fadeIn').addClass('show');
+    $('body').addClass('fixed');
+    $('body').addClass('noscroll');
+  });
+  // ×ボタンをクリックしたらフェードアウト
+  $('#coupon01-button').click(function() {
+    $('#coupon01-fadeIn').removeClass('show');
+    $('body').removeClass('fixed');
+    $('body').removeClass('noscroll');
+  });
+  $('#coupon02-button').click(function() {
+    $('#coupon02-fadeIn').removeClass('show');
+    $('body').removeClass('fixed');
+    $('body').removeClass('noscroll');
+  });
+  $('#coupon03-button').click(function() {
+    $('#coupon03-fadeIn').removeClass('show');
+    $('body').removeClass('fixed');
+    $('body').removeClass('noscroll');
+  });
+  $('#coupon04-button').click(function() {
+    $('#coupon04-fadeIn').removeClass('show');
+    $('body').removeClass('fixed');
+    $('body').removeClass('noscroll');
+  });
 });
