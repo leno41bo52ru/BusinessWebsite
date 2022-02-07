@@ -61,19 +61,6 @@
   }
 }
 
-.fujin__access__title {
-  margin-bottom: 30px;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: serif;
-}
-
-@media screen and (max-width: 767px) {
-  .fujin__access__title {
-    font-size: 36px;
-  }
-}
-
 .fujin__access__info__title01 {
   margin-bottom: 30px;
   font-size: 36px;
