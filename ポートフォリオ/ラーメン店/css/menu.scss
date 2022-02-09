@@ -76,15 +76,15 @@
           border:solid 1px #bd2611;
         }
       }
-      .panel{
+      .panel {
         display:none;
       }
-      .tab.is-active{
+      .tab.is-active {
         background:#db3b1f;
         color:#FFF;
         transition: all 0.2s ease-out;
       }
-      .panel.is-show{
+      .panel.is-show {
         display:block;
       }
       //▲タブ切り替え▲
