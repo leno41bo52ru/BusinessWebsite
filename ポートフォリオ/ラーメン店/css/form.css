@@ -1,0 +1,255 @@
+.fujin__form {
+  padding: 60px 0;
+  background-color: #fcf6f1;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form {
+    padding: 30px 0;
+  }
+}
+
+.fujin__form__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form__inner {
+    width: 100%;
+  }
+}
+
+.fujin__form__box01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.fujin__form__box01__image {
+  width: 250px;
+}
+
+.fujin__form__box01__image img {
+  width: 100%;
+}
+
+.fujin__form__box01__right {
+  width: calc(100% - 280px);
+}
+
+.fujin__form__box01__right__top {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.fujin__form__box01__right__top__title {
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #636363;
+}
+
+.fujin__form__box01__right__top__label {
+  display: inline-block;
+  padding: 7px 11px;
+  background-color: #db3b1f;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.fujin__form__box01__right__sub-title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fujin__form__box01__right table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: 1px solid #d7d7d7;
+}
+
+.fujin__form__box01__right table tbody tr th, .fujin__form__box01__right table tbody tr td {
+  padding: 10px 5px;
+  border-collapse: collapse;
+  border: 1px solid #d7d7d7;
+  vertical-align: middle;
+}
+
+.fujin__form__box01__right table tbody tr th {
+  width: 60px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.fujin__form__box01__right__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fujin__form__box01__right__bottom__tell {
+  font-size: 14px;
+}
+
+.fujin__form__box01__right__bottom__tell__number {
+  font-size: 18px;
+  color: #a29167;
+  text-decoration: underline;
+}
+
+.fujin__form__box01__right__bottom__detail {
+  display: inline-block;
+  width: 110px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.fujin__form__box01__right__bottom__detail a {
+  display: block;
+  padding: 10px 0;
+  color: #a29167;
+  border: 1px solid #a29167;
+  border-radius: 5px;
+}
+
+.fujin__form__box01__right__bottom__detail a:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background-color: #f0e9dc;
+}
+
+.fujin__form__button {
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #db3b1f;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.fujin__form__button:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background-color: #bd2611;
+}
+
+.fujin__form form table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form form table {
+    margin-bottom: 30px;
+  }
+}
+
+.fujin__form form table th,
+.fujin__form form table td {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form form table th,
+  .fujin__form form table td {
+    width: 100%;
+    display: block;
+  }
+}
+
+.fujin__form form table th {
+  width: 240px;
+  background: #eee;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form form table th {
+    width: 100%;
+  }
+}
+
+.fujin__form form table th .required {
+  margin-left: 15px;
+  color: #db3b1f;
+  font-weight: bold;
+}
+
+.fujin__form form table td {
+  background-color: #ffffff;
+}
+
+.fujin__form form table td input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.fujin__form form table td input:focus {
+  border: 1px solid #52a8ec;
+  -webkit-box-shadow: inset 0 0 2px rgba(82, 168, 236, 0.15);
+  box-shadow: inner 0 0 2px rgba(82, 168, 236, 0.15);
+}
+
+.fujin__form form table td input[name="address01"], .fujin__form form table td input[name="address02"] {
+  width: 80%;
+  min-width: 232px;
+}
+
+.fujin__form form table td .select__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.fujin__form form table td .select__wrapper::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 15px;
+  right: 5px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+
+.fujin__form form table td .select__wrapper:nth-of-type(n + 2) {
+  margin-left: 10px;
+}
+
+.fujin__form form table td select {
+  padding: 8px 24px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.fujin__form form table td select:focus {
+  border: 1px solid #52a8ec;
+  -webkit-box-shadow: inset 0 0 2px rgba(82, 168, 236, 0.15);
+  box-shadow: inner 0 0 2px rgba(82, 168, 236, 0.15);
+}
+/*# sourceMappingURL=form.css.map */

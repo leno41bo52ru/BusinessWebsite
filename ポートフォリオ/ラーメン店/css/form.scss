@@ -1,0 +1,219 @@
+.fujin {
+  &__form {
+    padding: 60px 0;
+    background-color: #fcf6f1;
+    @media screen and (max-width:767px) {
+      padding: 30px 0;
+    }
+    &__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+    }
+    &__box01 {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      &__image {
+        width: 250px;
+        img {
+          width: 100%;
+        }
+      }
+      &__right {
+        width: calc(100% - 280px);
+        &__top {
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px dashed #ccc;
+          &__title {
+            margin-bottom: 5px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #636363;
+          }
+          &__label {
+            display: inline-block;
+            padding: 7px 11px;
+            background-color: #db3b1f;
+            color: #ffffff;
+            font-size: 14px;
+            border-radius: 5px;
+          }
+        }
+        &__sub-title {
+          margin-bottom: 15px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        table {
+          margin-bottom: 20px;
+          border-collapse: collapse;
+          border:1px solid #d7d7d7;
+          tbody {
+            tr {
+              th,td {
+                padding: 10px 5px;
+                border-collapse: collapse;
+                border:1px solid #d7d7d7;
+                vertical-align: middle;
+              }
+              th {
+                width: 60px;
+                background-color: #efefef;
+                text-align: center;
+              }
+            }
+          }
+        }
+        &__bottom {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          &__tell {
+            font-size: 14px;
+            &__number {
+              font-size: 18px;
+              color: #a29167;
+              text-decoration: underline;
+            }
+          }
+          &__detail {
+            display: inline-block;
+            width: 110px;
+            margin-left: auto;
+            text-align: center;
+            a {
+              display: block;
+              padding: 10px 0;
+              color: #a29167;
+              border: 1px solid #a29167;
+              border-radius: 5px;
+              &:hover {
+                transition: .6s;
+                background-color: #f0e9dc;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__button {
+      display: block;
+      margin: auto;
+      padding: 10px 20px;
+      background-color: #db3b1f;
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 5px;
+      &:hover {
+        transition: .6s;
+        background-color: #bd2611;
+      }
+    }
+    form {
+      table {
+        width: 100%;
+        margin-bottom: 50px;
+        @media screen and (max-width:767px) {
+          margin-bottom: 30px;
+        }
+        th,
+        td {
+          padding: 8px 12px;
+          border: 1px solid #333;
+          text-align: left;
+          vertical-align: middle;
+          @media screen and (max-width:767px) {
+            width: 100%;
+            display: block;
+          }
+        }
+        th {
+          width: 240px;
+          background: #eee;
+          font-weight: normal;
+          @media screen and (max-width:767px) {
+            width: 100%;
+          }
+          .required {
+            margin-left: 15px;
+            color: #db3b1f;
+            font-weight: bold;
+          }
+        }
+        td {
+          background-color: #ffffff;
+          // @media screen and (max-width:767px) {
+          //   width: calc(100% - 150px);
+          // }
+          input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.15);
+            -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+            box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            &:focus {
+              border: 1px solid #52a8ec;
+              -moz-box-shadow: inset 0 0 2px rgba(82,168,236,0.15);
+              -webkit-box-shadow: inset 0 0 2px rgba(82,168,236,0.15);
+              box-shadow: inner 0 0 2px rgba(82,168,236,0.15);
+            }
+            &[name="address01"],
+            &[name="address02"] {
+              width: 80%;
+              min-width: 232px;
+            }
+          }
+          .select__wrapper {
+            position: relative;
+            display: inline-block;
+            &::after {
+              position: absolute;
+              content: "";
+              display: inline-block;
+              top: 15px;
+              right: 5px;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid #666666;
+              pointer-events: none;
+            }
+            &:nth-of-type(n + 2) {
+              margin-left: 10px;
+            }
+          }
+          select {
+            padding: 8px 24px 8px 8px;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.15);
+            -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+            box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            &:focus {
+              border: 1px solid #52a8ec;
+              -moz-box-shadow: inset 0 0 2px rgba(82,168,236,0.15);
+              -webkit-box-shadow: inset 0 0 2px rgba(82,168,236,0.15);
+              box-shadow: inner 0 0 2px rgba(82,168,236,0.15);
+            }
+          }
+        }
+      }
+    }
+  }
+}
