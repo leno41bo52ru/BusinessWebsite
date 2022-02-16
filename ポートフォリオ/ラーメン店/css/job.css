@@ -295,10 +295,12 @@
 }
 
 .fujin__job__slick-wrapper .choice-btn .slick-active {
-  opacity: .7;
+  opacity: .6;
 }
 
 .fujin__job__slick-wrapper .choice-btn .slick-active:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
   opacity: 1;
 }
 

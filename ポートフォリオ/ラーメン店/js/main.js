@@ -33,14 +33,12 @@ let mySwiper = new Swiper ('.swiper', {
   },
 });
 
-//同じ記述なのでリファクタリングしたい
 //ハンバーガーメニュー×押したらメニュー閉じる
 $(function () {
   $('.burger-btn').on('click', function () {
     $('.burger-btn').toggleClass('close');
     $('.nav-wrapper').toggleClass('fade');
-    $('body').toggleClass('fixed');
-    $('body').toggleClass('noscroll');
+    $('body').toggleClass('fixed noscroll');
   });
 });
 //ハンバーガーメニューリンククリックしたらメニュー閉じる
@@ -48,8 +46,7 @@ $(function () {
   $('.nav-item').on('click', function () {
     $('.burger-btn').toggleClass('close');
     $('.nav-wrapper').toggleClass('fade');
-    $('body').removeClass('fixed');
-    $('body').removeClass('noscroll');
+    $('body').removeClass('fixed noscroll');
   });
 });
 
@@ -74,57 +71,34 @@ document.addEventListener('DOMContentLoaded', function() {
 	};
 }, false);
 
-//一番上までスクロールする。
+//右下の↑固定ボタンクリック時に一番上までスクロールする。
 $(".upper__wrapper").click(function(){
   $('html,body').animate({'scrollTop':0},500);
 });
 
 //クーポン券フェードイン/フェードアウト
 $(function() {
-  // クーポンをクリックしたらフェードイン
-  $('#coupon01').click(function() {
-    $('#coupon01-fadeIn').addClass('show');
-    $('body').addClass('fixed');
-    $('body').addClass('noscroll');
-  });
-  $('#coupon02').click(function() {
-    $('#coupon02-fadeIn').addClass('show');
-    $('body').addClass('fixed');
-    $('body').addClass('noscroll');
-  });
-  $('#coupon03').click(function() {
-    $('#coupon03-fadeIn').addClass('show');
-    $('body').addClass('fixed');
-    $('body').addClass('noscroll');
-  });
-  $('#coupon04').click(function() {
-    $('#coupon04-fadeIn').addClass('show');
-    $('body').addClass('fixed');
-    $('body').addClass('noscroll');
-  });
-  // ×ボタンをクリックしたらフェードアウト
-  $('#coupon01-button').click(function() {
-    $('#coupon01-fadeIn').removeClass('show');
-    $('body').removeClass('fixed');
-    $('body').removeClass('noscroll');
-  });
-  $('#coupon02-button').click(function() {
-    $('#coupon02-fadeIn').removeClass('show');
-    $('body').removeClass('fixed');
-    $('body').removeClass('noscroll');
-  });
-  $('#coupon03-button').click(function() {
-    $('#coupon03-fadeIn').removeClass('show');
-    $('body').removeClass('fixed');
-    $('body').removeClass('noscroll');
-  });
-  $('#coupon04-button').click(function() {
-    $('#coupon04-fadeIn').removeClass('show');
-    $('body').removeClass('fixed');
-    $('body').removeClass('noscroll');
-  });
+  // クーポンに対してクリックイベントを適用
+	const couponList = document.getElementsByClassName('fujin__coupon__box01__list');
+  const couponFade = document.getElementsByClassName('fujin__coupon__fadeIn');
+  const couponClose = document.getElementsByClassName('fujin__coupon__fadeIn__button');
+
+	for(let i = 0; i < couponList.length; i++) {
+    //クーポンクリック時
+		couponList[i].addEventListener('click', function() {
+      couponFade[i].classList.add('show');
+      document.body.classList.add('fixed','noscroll');
+    });
+
+    // クーポン×ボタンクリック時
+    couponClose[i].addEventListener('click', function() {
+      couponFade[i].classList.remove('show');
+      document.body.classList.remove('fixed','noscroll')
+    });
+	}
 });
 
+//お知らせページのページネーション
 $(document).ready(function($){
   $('.list-group').paginathing({
       perPage: 4,

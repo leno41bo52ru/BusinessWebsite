@@ -206,8 +206,9 @@
         }
         /*選択するサムネイル画像の設定*/
         .slick-active {
-          opacity: .7;
+          opacity: .6;
           &:hover {
+            transition: .3s;
             opacity: 1;
           }
         }

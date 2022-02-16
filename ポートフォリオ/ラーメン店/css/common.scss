@@ -63,12 +63,6 @@ header {
             width: 100%;
           }
         }
-        &__right {
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: baseline;
-          align-items: baseline;
-        }
         //▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ハンバーガーメニュー記述▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
         @media screen and (max-width:767px) {
           /* ----------------------- */
@@ -135,9 +129,11 @@ header {
             &__content {
               display: block;
               position: absolute;
+              width: 100%;
               top: 50%;
               left: 50%;
               transform: translate(-50%,-50%);
+              padding: 0 20px;
               text-align: center;
             }
           }
@@ -183,9 +179,6 @@ header {
           text-align: center;
           font-size: 14px;
           color: #ffffff;
-          @media screen and (max-width:767px) {
-            margin-bottom: 30px;
-          }
           span {
             position: relative;
             padding-left: 30px;
@@ -209,24 +202,6 @@ header {
             a {
               text-decoration: underline;
             }
-          }
-        }
-        &__reserve {
-          margin-left: 25px;
-          padding: 15px 10px;
-          border-radius: 20px;
-          display: block;
-          background: #db3b1f;
-          box-shadow: 0 3px 5px 0 rgba(0,0,0,0.15);
-          text-align: center;
-          font-weight: bold;
-          color: #ffffff;
-          @media screen and (max-width:767px) {
-            margin: 0 auto;
-          }
-          &:hover {
-            transition: .6s;
-            background: #bd2611;
           }
         }
       }

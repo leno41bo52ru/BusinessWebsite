@@ -88,15 +88,6 @@ header .fujin__top__box01__logo img {
   width: 100%;
 }
 
-header .fujin__top__box01__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 @media screen and (max-width: 767px) {
   header .fujin__top__box01 {
     /* ----------------------- */
@@ -178,10 +169,12 @@ header .fujin__top__box01__right {
   header .fujin__top__box01 .header-nav__content {
     display: block;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    padding: 0 20px;
     text-align: center;
   }
   header .fujin__top__box01 .nav-list {
@@ -223,12 +216,6 @@ header .fujin__top__box01__contact {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  header .fujin__top__box01__contact {
-    margin-bottom: 30px;
-  }
-}
-
 header .fujin__top__box01__contact span {
   position: relative;
   padding-left: 30px;
@@ -258,31 +245,6 @@ header .fujin__top__box01__contact span::after {
 
 header .fujin__top__box01__contact span a {
   text-decoration: underline;
-}
-
-header .fujin__top__box01__reserve {
-  margin-left: 25px;
-  padding: 15px 10px;
-  border-radius: 20px;
-  display: block;
-  background: #db3b1f;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-  text-align: center;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  header .fujin__top__box01__reserve {
-    margin: 0 auto;
-  }
-}
-
-header .fujin__top__box01__reserve:hover {
-  -webkit-transition: .6s;
-  transition: .6s;
-  background: #bd2611;
 }
 
 header .fujin__bottom {

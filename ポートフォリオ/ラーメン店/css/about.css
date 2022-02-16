@@ -1,3 +1,14 @@
+.fujin__about {
+  padding: 60px 0;
+  background-color: #fcf6f1;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__about {
+    padding: 30px 0;
+  }
+}
+
 .fujin__about__MainVisual {
   position: relative;
   width: 100%;
@@ -43,10 +54,10 @@
 .fujin__about__title {
   position: relative;
   padding: 20px 0;
-  background-color: #f1efe9;
+  background-color: #db3b1f;
   text-align: center;
   font-size: 24px;
-  color: #db3b1f;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -68,7 +79,7 @@
   height: 20px;
   border-style: solid;
   border-width: 20px 20px 0 20px;
-  border-color: #f1efe9 transparent transparent transparent;
+  border-color: #db3b1f transparent transparent transparent;
 }
 
 .fujin__about__inner {
@@ -124,6 +135,11 @@
 .fujin__about__box__text {
   width: 50%;
   line-height: 1.8;
+}
+
+.fujin__about__box__text .emphasis {
+  color: #db3b1f;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
