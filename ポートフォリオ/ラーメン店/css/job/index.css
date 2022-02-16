@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url(../image/fujin_img36.jpg);
+  background-image: url(../../image/fujin_img36.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -352,7 +352,7 @@
   /*クリックをしたら出てくる枠線を消す*/
   height: 50px;
   width: 25px;
-  background-image: url(../image/fujin_icon02.png);
+  background-image: url(../../image/fujin_icon02.png);
   background-size: 25px,50px;
   background-position: center;
 }
@@ -376,7 +376,7 @@
   padding: 10px 20px;
   color: #ffffff;
   font-weight: bold;
-  background-image: url(../image/fujin_img01.png);
+  background-image: url(../../image/fujin_img01.png);
 }
 
 .fujin__job__appeal__text {
@@ -507,4 +507,4 @@
   transition: .6s;
   background: #bd2611;
 }
-/*# sourceMappingURL=job.css.map */
+/*# sourceMappingURL=index.css.map */

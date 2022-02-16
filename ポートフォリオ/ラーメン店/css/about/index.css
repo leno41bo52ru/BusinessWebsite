@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url(../image/fujin_img24.jpg);
+  background-image: url(../../image/fujin_img24.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -162,4 +162,4 @@
 .fujin__about__box__image img {
   width: 100%;
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=index.css.map */

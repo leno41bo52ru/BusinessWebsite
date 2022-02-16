@@ -13,7 +13,7 @@
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url(../image/fujin_img34.png);
+  background-image: url(../../image/fujin_img34.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -217,7 +217,7 @@
   padding: 10px 20px;
   color: #ffffff;
   font-weight: bold;
-  background-image: url(../image/fujin_img01.png);
+  background-image: url(../../image/fujin_img01.png);
 }
 
 @media screen and (max-width: 767px) {
@@ -293,7 +293,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url(../image/fujin_icon05.png);
+  background-image: url(../../image/fujin_icon05.png);
   background-position: center;
   background-size: 30px,30px;
   background-repeat: no-repeat;
@@ -410,4 +410,4 @@
 .fujin__coupon__fadeIn__button img {
   width: 100%;
 }
-/*# sourceMappingURL=coupon.css.map */
+/*# sourceMappingURL=index.css.map */
