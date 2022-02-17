@@ -78,7 +78,8 @@
         }
         &:hover {
           transition: .6s;
-          background: #bd2611
+          background: #bd2611;
+          cursor: pointer;
         }
         &:nth-of-type(n + 3) {
           margin-top: 40px;

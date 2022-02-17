@@ -111,6 +111,7 @@
   -webkit-transition: .6s;
   transition: .6s;
   background: #bd2611;
+  cursor: pointer;
 }
 
 .fujin__coupon__box01__list:nth-of-type(n + 3) {

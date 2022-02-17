@@ -31,8 +31,24 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .fujin__form__box01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .fujin__form__box01__image {
   width: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form__box01__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .fujin__form__box01__image img {
@@ -41,6 +57,12 @@
 
 .fujin__form__box01__right {
   width: calc(100% - 280px);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form__box01__right {
+    width: 100%;
+  }
 }
 
 .fujin__form__box01__right__top {
@@ -99,8 +121,26 @@
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .fujin__form__box01__right__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .fujin__form__box01__right__bottom__tell {
   font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form__box01__right__bottom__tell {
+    margin-bottom: 10px;
+  }
 }
 
 .fujin__form__box01__right__bottom__tell__number {
@@ -114,6 +154,12 @@
   width: 110px;
   margin-left: auto;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__form__box01__right__bottom__detail {
+    margin-left: inherit;
+  }
 }
 
 .fujin__form__box01__right__bottom__detail a {
