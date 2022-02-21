@@ -89,15 +89,6 @@ header .fujin__top__box01__logo img {
 }
 
 @media screen and (max-width: 767px) {
-  header .fujin__top__box01 {
-    /* ----------------------- */
-    /* base_sp
-          /* ----------------------- */
-    /* 以下、ハンバーガーボタン */
-    /* 以下、ハンバーガーメニュー */
-    /* メニューオープン時 */
-    /* デフォルトのbuttonスタイルをリセット */
-  }
   header .fujin__top__box01 .burger-btn {
     display: block;
     width: 39px;
