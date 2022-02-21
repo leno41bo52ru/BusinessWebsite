@@ -1,0 +1,521 @@
+@charset "UTF-8";
+body {
+  padding-top: 134px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 86.6px;
+  }
+}
+
+body.fixed {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+@media screen and (max-width: 767px) {
+  .pcOnly {
+    display: none !important;
+  }
+}
+
+.spOnly {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .spOnly {
+    display: block !important;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header .fujin__top {
+  padding: 10px;
+  background-image: url(../image/fujin_img01.png);
+}
+
+header .fujin__top__box01 {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  header .fujin__top__box01 {
+    width: 100%;
+  }
+}
+
+header .fujin__top__box01__logo {
+  width: 220px;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__logo {
+    width: 200px;
+  }
+}
+
+header .fujin__top__box01__logo a {
+  display: block;
+}
+
+header .fujin__top__box01__logo a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0.8;
+}
+
+header .fujin__top__box01__logo img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01 .burger-btn {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: relative;
+    z-index: 3;
+    border: none;
+  }
+  header .fujin__top__box01 .bar {
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #fff;
+  }
+  header .fujin__top__box01 .bar_top {
+    top: 10px;
+  }
+  header .fujin__top__box01 .bar_mid {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  header .fujin__top__box01 .bar_bottom {
+    bottom: 10px;
+  }
+  header .fujin__top__box01 .burger-btn.close .bar_top {
+    -webkit-transform: translate(-50%, 10px) rotate(45deg);
+            transform: translate(-50%, 10px) rotate(45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  header .fujin__top__box01 .burger-btn.close .bar_mid {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+  header .fujin__top__box01 .burger-btn.close .bar_bottom {
+    -webkit-transform: translate(-50%, -8px) rotate(-45deg);
+            transform: translate(-50%, -8px) rotate(-45deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  header .fujin__top__box01 .nav-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: 2;
+  }
+  header .fujin__top__box01 .header-nav {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/fujin_img01.png);
+    z-index: 2;
+  }
+  header .fujin__top__box01 .header-nav__content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+  }
+  header .fujin__top__box01 .nav-list {
+    margin-bottom: 50px;
+  }
+  header .fujin__top__box01 .nav-list .nav-item:nth-of-type(n + 2) {
+    margin-top: 40px;
+  }
+  header .fujin__top__box01 .nav-list .nav-item a {
+    color: #ffffff;
+  }
+  header .fujin__top__box01 .nav-wrapper.fade {
+    visibility: visible;
+    opacity: 1;
+  }
+  header .fujin__top__box01 .noscroll {
+    overflow: hidden;
+  }
+  header .fujin__top__box01 button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+  }
+}
+
+header .fujin__top__box01__contact {
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+header .fujin__top__box01__contact span {
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 2.0;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__contact span {
+    font-size: 16px;
+  }
+}
+
+header .fujin__top__box01__contact span::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url(../image/fujin_icon01.png) no-repeat 0 0;
+  background-size: 25px 25px;
+}
+
+header .fujin__top__box01__contact span a {
+  text-decoration: underline;
+}
+
+header .fujin__bottom {
+  background-color: #db3b1f;
+}
+
+header .fujin__bottom__box01 {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  header .fujin__bottom__box01 {
+    width: 100%;
+  }
+}
+
+header .fujin__bottom__box01 li {
+  width: 16.6%;
+  text-align: center;
+  font-size: 18px;
+}
+
+header .fujin__bottom__box01 li:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background: #bd2611;
+}
+
+header .fujin__bottom__box01 li a {
+  display: block;
+  padding: 10px 8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.fujin__breadcrumb {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 50px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+}
+
+.fujin__breadcrumb--home {
+  position: relative;
+}
+
+.fujin__breadcrumb--home::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: calc(50% - 14px);
+  left: -35px;
+  background-image: url(../image/fujin_icon06.png);
+  background-size: 24px,24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb--home::after {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 12px);
+    left: -25px;
+    background-size: 20px,20px;
+  }
+}
+
+.fujin__breadcrumb span {
+  display: inline-block;
+}
+
+.fujin__breadcrumb span a {
+  display: inline-block;
+}
+
+.fujin__breadcrumb span a:hover {
+  text-decoration: underline;
+}
+
+.fujin__breadcrumb span:nth-of-type(n + 2) {
+  position: relative;
+  margin-left: 30px;
+}
+
+.fujin__breadcrumb span:nth-of-type(n + 2)::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #000000;
+  width: 1px;
+  height: 20px;
+  top: calc(50% - 10px);
+  left: -15px;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb {
+    width: 100%;
+  }
+}
+
+.upper__wrapper {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .upper__wrapper {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.upper__wrapper:hover {
+  opacity: .8;
+}
+
+.upper__button {
+  position: relative;
+}
+
+.upper__button::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 20px;
+  left: 50%;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: translateX(-50%) translateY(0) rotate(-45deg);
+          transform: translateX(-50%) translateY(0) rotate(-45deg);
+}
+
+footer .fujin__footerWrapper {
+  padding: 50px 0;
+  background-color: #f1efe9;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__footerWrapper {
+    padding: 30px;
+  }
+}
+
+footer .fujin__inner {
+  width: 780px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__inner {
+    width: 100%;
+  }
+}
+
+footer .fujin__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 20px;
+  }
+}
+
+footer .fujin__list li {
+  margin: 5px 0;
+}
+
+footer .fujin__list li a {
+  display: block;
+  padding: 5px 15px;
+}
+
+footer .fujin__list li a:hover {
+  color: #db3b1f;
+  text-decoration: underline;
+}
+
+footer .fujin__list li:not(:last-child) {
+  position: relative;
+}
+
+footer .fujin__list li:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+}
+
+footer .fujin__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fujin__sns li {
+  width: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .fujin__sns li {
+    width: 25px;
+  }
+}
+
+footer .fujin__sns li:nth-of-type(n + 2) {
+  margin-left: 15px;
+}
+
+footer .fujin__sns li a {
+  display: block;
+}
+
+footer .fujin__sns li a:hover {
+  opacity: .6;
+}
+
+footer .fujin__sns li img {
+  width: 100%;
+}
+
+footer .fujin__copylight {
+  padding: 10px 0;
+  background-color: #db3b1f;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=common.css.map */
