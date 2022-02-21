@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .fujin__job {
-  padding: 60px 0;
+  padding-bottom: 60px;
   background-color: #fcf6f1;
 }
 
 @media screen and (max-width: 767px) {
   .fujin__job {
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
 }
 

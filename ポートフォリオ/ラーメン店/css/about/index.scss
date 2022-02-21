@@ -1,9 +1,9 @@
 .fujin {
   &__about {
-    padding: 60px 0;
+    padding-bottom: 60px;
     background-color: #fcf6f1;
     @media screen and (max-width:767px) {
-      padding: 30px 0;
+      padding-bottom: 30px;
     }
     &__MainVisual {
       position: relative;
