@@ -132,9 +132,6 @@
           </div>
         </div>
       </div>
-      <div class="fujin__form__box02">
-
-      </div>
       <form name="formname" id="id_form" action="">
         <table>
           <tr>
@@ -231,7 +228,7 @@
             <td>
               <div class="select__wrapper">
                 <select name="job">
-                  <option value="選択してください。">選択してください。</option>
+                  <option value="">選択してください。</option>
                   <option value="高校生">高校生</option>
                   <option value="大学生">大学生</option>
                   <option value="大学院生">大学院生</option>
@@ -257,7 +254,57 @@
             <td><input type="text" name="address02" value=""></td>
           </tr>  
         </table>
-        <a class="fujin__form__button" id="createFile" value="入力内容を確認する" onclick="ConfirmForm()">入力内容を確認する</a>
+        <div class="fujin__form__button" onclick="ConfirmForm()">入力内容を確認する</div>
+      </form>
+    </div>
+  </div>
+  <div id="formConf-fadeIn" class="fujin__formConf">
+    <div class="fujin__formConf__inner">
+      <div class="fujin__formConf__title">入力内容をご確認ください</div>
+      <div class="fujin__formConf__subtitle">お客様の情報</div>
+      <form name="formname_Conf" id="id_form_Conf" action="">
+        <table>
+          <tr>
+            <th><label>お名前（漢字）<span class="required">必須</span></label></th>
+            <td id="name01_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>お名前（ふりがな）<span class="required">必須</span></label></th>
+            <td id="name02_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>生年月日<span class="required">必須</span></label></th>
+            <td class="year__box"><div id="year_Conf"></div>年<div id="month_Conf"></div>月<div id="day_Conf"></div>日</td>
+          </tr>
+          <tr>
+            <th><label>性別<span class="required">必須</span></label></th>
+            <td id="gender_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>メールアドレス<span class="required">必須</span></label></th>
+            <td id="email_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>電話番号<span class="required">必須</span></label></th>
+            <td id="tel_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>現在のご職業<span class="required">必須</span></label></th>
+            <td id="job_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>住所<span class="required">必須</span></label></th>
+            <td id="address01_Conf"></td>
+          </tr>
+          <tr>
+            <th><label>丁目・番地・建物名</label></th>
+            <td id="address02_Conf"></td>
+          </tr>  
+        </table>
+        <div class="fujin__formConf__button-wrapper">
+          <div class="fujin__formConf__button-wrapper--fix" onclick="ConfirmForm_close()">修正</div>
+          <a href="../index.html" class="fujin__formConf__button-wrapper--send">送信</a>
+        </div>
       </form>
     </div>
   </div>
