@@ -5,7 +5,7 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
-    padding-top: 86.6px;
+    padding-top: 73.4px;
   }
 }
 
@@ -70,7 +70,7 @@ header .fujin__top__box01__logo {
 
 @media screen and (max-width: 767px) {
   header .fujin__top__box01__logo {
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -89,6 +89,15 @@ header .fujin__top__box01__logo img {
 }
 
 @media screen and (max-width: 767px) {
+  header .fujin__top__box01 {
+    /* ----------------------- */
+    /* base_sp
+          /* ----------------------- */
+    /* 以下、ハンバーガーボタン */
+    /* 以下、ハンバーガーメニュー */
+    /* メニューオープン時 */
+    /* デフォルトのbuttonスタイルをリセット */
+  }
   header .fujin__top__box01 .burger-btn {
     display: block;
     width: 39px;
@@ -166,6 +175,7 @@ header .fujin__top__box01__logo img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     padding: 0 20px;
+    font-size: 18px;
     text-align: center;
   }
   header .fujin__top__box01 .nav-list {
@@ -203,8 +213,14 @@ header .fujin__top__box01__logo img {
 
 header .fujin__top__box01__contact {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__contact {
+    font-size: 18px;
+  }
 }
 
 header .fujin__top__box01__contact span {
@@ -212,12 +228,6 @@ header .fujin__top__box01__contact span {
   padding-left: 30px;
   font-size: 18px;
   line-height: 2.0;
-}
-
-@media screen and (max-width: 767px) {
-  header .fujin__top__box01__contact span {
-    font-size: 16px;
-  }
 }
 
 header .fujin__top__box01__contact span::after {
@@ -340,6 +350,12 @@ header .fujin__bottom__box01 li a {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb span:nth-of-type(n + 2) {
+    margin-left: 20px;
+  }
+}
+
 .fujin__breadcrumb span:nth-of-type(n + 2)::after {
   content: "";
   position: absolute;
@@ -351,6 +367,12 @@ header .fujin__bottom__box01 li a {
   left: -15px;
   -webkit-transform: rotate(25deg);
   transform: rotate(25deg);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb span:nth-of-type(n + 2)::after {
+    left: -10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -491,12 +513,12 @@ footer .fujin__sns li {
 
 @media screen and (max-width: 767px) {
   footer .fujin__sns li {
-    width: 25px;
+    width: 30px;
   }
 }
 
 footer .fujin__sns li:nth-of-type(n + 2) {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 footer .fujin__sns li a {
@@ -512,7 +534,7 @@ footer .fujin__sns li img {
 }
 
 footer .fujin__copylight {
-  padding: 10px 0;
+  padding: 10px;
   background-color: #db3b1f;
   color: #ffffff;
   font-size: 12px;

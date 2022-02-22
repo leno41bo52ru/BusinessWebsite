@@ -178,6 +178,7 @@
 
 .fujin__form__button {
   display: block;
+  width: 230px;
   margin: auto;
   padding: 10px 20px;
   background-color: #db3b1f;

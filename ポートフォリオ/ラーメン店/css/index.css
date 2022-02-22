@@ -58,6 +58,11 @@
   margin-top: -48px;
 }
 
+.fujin__main-slider .swiper-button-prev:focus,
+.fujin__main-slider .swiper-button-next:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 767px) {
   .fujin__main-slider .swiper-button-prev,
   .fujin__main-slider .swiper-button-next {
@@ -547,15 +552,6 @@
 }
 
 .fujin__notice__wrapper__info-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: right;
   margin-top: 30px;
 }
@@ -568,6 +564,7 @@
 
 .fujin__notice__wrapper__info-detail a {
   position: relative;
+  display: inline-block;
   background-color: #db3b1f;
   padding: 10px 15px 10px 35px;
   border-radius: 10px;

@@ -73,7 +73,7 @@
 @media screen and (max-width: 767px) {
   .fujin__access__info__title01 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
@@ -132,6 +132,10 @@
   .fujin__access__info td {
     width: calc(100% - 120px);
   }
+}
+
+.fujin__access__info td .tell {
+  text-decoration: underline;
 }
 
 .fujin__access__info__staff {

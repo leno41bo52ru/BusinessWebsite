@@ -304,6 +304,10 @@
   opacity: 1;
 }
 
+.fujin__job__slick-wrapper .choice-btn .slick-active:focus {
+  outline: none;
+}
+
 .fujin__job__slick-wrapper .choice-btn .slick-current {
   opacity: 1;
 }
