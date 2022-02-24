@@ -135,11 +135,11 @@
       <form name="formname" id="id_form" action="">
         <table>
           <tr>
-            <th><label id="name01">お名前（漢字）<span class="required">必須</span></label></th>
+            <th><label id="name01">氏名<span class="required">必須</span></label></th>
             <td><input type="text" name="name01" placeholder="山田 太郎"></td>
           </tr>
           <tr>
-            <th><label id="name02">お名前（ふりがな）<span class="required">必須</span></label></th>
+            <th><label id="name02">ふりがな<span class="required">必須</span></label></th>
             <td><input type="text" name="name02" placeholder="やまだ たろう" pattern="[\u3041-\u3096]*"></td>
           </tr>
           <tr>
@@ -224,7 +224,7 @@
             </td>
           </tr>
           <tr>
-            <th><label id="job">現在のご職業<span class="required">必須</span></label></th>
+            <th><label id="job">職業<span class="required">必須</span></label></th>
             <td>
               <div class="select__wrapper">
                 <select name="job">
@@ -254,6 +254,7 @@
             <td><input type="text" name="address02" value=""></td>
           </tr>  
         </table>
+        <div id="alertbox"></div>
         <div class="fujin__form__button" onclick="ConfirmForm()">入力内容を確認する</div>
       </form>
     </div>
@@ -265,11 +266,11 @@
       <form name="formname_Conf" id="id_form_Conf" action="">
         <table>
           <tr>
-            <th><label>お名前（漢字）<span class="required">必須</span></label></th>
+            <th><label>氏名<span class="required">必須</span></label></th>
             <td id="name01_Conf"></td>
           </tr>
           <tr>
-            <th><label>お名前（ふりがな）<span class="required">必須</span></label></th>
+            <th><label>ふりがな<span class="required">必須</span></label></th>
             <td id="name02_Conf"></td>
           </tr>
           <tr>
@@ -289,7 +290,7 @@
             <td id="tel_Conf"></td>
           </tr>
           <tr>
-            <th><label>現在のご職業<span class="required">必須</span></label></th>
+            <th><label>職業<span class="required">必須</span></label></th>
             <td id="job_Conf"></td>
           </tr>
           <tr>
