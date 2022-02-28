@@ -177,6 +177,7 @@
         }
         td {
           background-color: #ffffff;
+          line-height: 1.5;
           input {
             padding: 8px;
             border: 1px solid #ccc;
@@ -199,9 +200,6 @@
               min-width: 232px;
             }
           }
-          // .alert {
-          //   border: 1px solid #D45B5B;
-          // }
           .select__wrapper {
             position: relative;
             display: inline-block;
@@ -209,7 +207,7 @@
               position: absolute;
               content: "";
               display: inline-block;
-              top: 15px;
+              top: 18px;
               right: 5px;
               border-left: 6px solid transparent;
               border-right: 6px solid transparent;
@@ -239,6 +237,11 @@
           }
         }
       }
+      .alertText {
+        display: block;
+        margin-top: 10px;
+        color: #ff0000;
+      }
     }
   }
   &__formConf {
@@ -246,6 +249,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     visibility: hidden;
     transition: .7s;
     padding: 60px 0;
@@ -257,8 +261,9 @@
       opacity: 1;
       width: 100vw;
       height: 100vh;
+      overflow: auto;
       position: fixed;
-      visibility: inherit;
+      visibility: visible;
       top: 0;
       left: 0;
       background-color: #fcf6f1;
@@ -277,11 +282,17 @@
       font-size: 24px;
       font-weight: bold;
       text-align: center;
+      @media screen and (max-width:767px) {
+        font-size: 20px;
+      }
     }
     &__subtitle {
       margin-bottom: 10px;
       font-size: 20px;
       font-weight: bold;
+      @media screen and (max-width:767px) {
+        font-size: 18px;
+      }
     }
     &__button-wrapper {
       display: -webkit-flex;
@@ -301,6 +312,10 @@
         text-align: center;
         border: 1px solid #444444;
         border-radius: 5px;
+        @media screen and (max-width:767px) {
+          width: 200px;
+          font-size: 16px;
+        }
         &:hover {
           transition: .6s;
           background-color: #dddddd;
@@ -318,6 +333,11 @@
         font-weight: bold;
         text-align: center;
         border-radius: 5px;
+        @media screen and (max-width:767px) {
+          width: 200px;
+          margin-left: 20px;
+          font-size: 16px;
+        }
         &:hover {
           transition: .6s;
           background-color: #bd2611;

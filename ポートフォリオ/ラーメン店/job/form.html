@@ -136,11 +136,11 @@
         <table>
           <tr>
             <th><label id="name01">氏名<span class="required">必須</span></label></th>
-            <td><input type="text" name="name01" placeholder="山田 太郎"></td>
+            <td><input type="text" name="name01" placeholder="山田 太郎"><span></span></td>
           </tr>
           <tr>
             <th><label id="name02">ふりがな<span class="required">必須</span></label></th>
-            <td><input type="text" name="name02" placeholder="やまだ たろう" pattern="[\u3041-\u3096]*"></td>
+            <td><input type="text" name="name02" placeholder="やまだ たろう" pattern="[\u3041-\u3096]*"><span></span></td>
           </tr>
           <tr>
             <th><label id="birth">生年月日<span class="required">必須</span></label></th>
@@ -204,6 +204,7 @@
                   <option value="31">31</option>
                 </select>
               </div> 日
+              <span></span>
             </td>
           </tr>
           <tr>
@@ -211,17 +212,16 @@
             <td>
               <input type="radio" name="gender" value="男性">男性
               <input type="radio" name="gender" value="女性">女性
+              <span></span>
             </td>
           </tr>
           <tr>
             <th><label id="mail">メールアドレス<span class="required">必須</span></label></th>
-            <td><input type="email" name="email" placeholder="sample@gmail.com"></td>
+            <td><input type="email" name="email" placeholder="sample@gmail.com"><span></span></td>
           </tr>
           <tr>
-            <th><label id="tell">電話番号<span class="required">必須</span></label></th>
-            <td>
-              <input type="tel" name="tel" placeholder="0000000000" title="電話番号">
-            </td>
+            <th><label id="tell">電話番号(半角数字)<span class="required">必須</span></label></th>
+            <td><input type="tel" name="tel" placeholder="0000000000" title="電話番号"><span></span></td>
           </tr>
           <tr>
             <th><label id="job">職業<span class="required">必須</span></label></th>
@@ -243,15 +243,16 @@
                   <option value="その他">その他</option>
                 </select>
               </div>
+              <span></span>
             </td>
           </tr>
           <tr>
             <th><label id="address01">住所<span class="required">必須</span></label></th>
-            <td><input type="text" name="address01" value=""></td>
+            <td><input type="text" name="address01" value=""><span></span></td>
           </tr>
           <tr>
             <th><label id="address02">丁目・番地・建物名</label></th>
-            <td><input type="text" name="address02" value=""></td>
+            <td><input type="text" name="address02" value=""><span></span></td>
           </tr>  
         </table>
         <div id="alertbox"></div>

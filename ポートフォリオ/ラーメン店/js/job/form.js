@@ -25,42 +25,46 @@ function ConfirmForm() {
 
   //フォームアラート表示
   function alertText() {
-    var alertbox_element = document.getElementById('alertbox');// id属性で要素を取得
+    var alertText_element = document.querySelectorAll('#id_form td span');
+    console.log("alertText_element[0]=" + alertText_element[0]);
+    
+    // var alertbox_element = document.getElementById('alertbox');// id属性で要素を取得
     var confFlag = [];
-    alertbox_element.innerHTML = "";//クリックされるたびにalertboxの中身を空にする。
-
+    //クリックされるたびにalertTextの中身を空にする。
+    for(let i = 0; i < alertText_element.length; i++) {
+      alertText_element[i].innerText = "";
+      alertText_element[i].classList.remove("alertText");
+    }
 
     //氏名チェック
     if(name01 === "") {
-      var name01_element = document.createElement('p');
-      name01_element.textContent = '氏名を入力してください。';
-      alertbox_element.appendChild(name01_element);
+      // alertText_element[0].innerHTML = "<span class='alertText'>氏名を入力してください。</span>";
+      alertText_element[0].innerText = "氏名を入力してください。";
+      alertText_element[0].classList.add("alertText");
+      // textbox.replaceChild("<span class='alertText'>氏名を入力してください。</span>", alertText_element[0]);
+      // console.log("alertText_element[0]=" + alertText_element[0]);
       confFlag.push('false');
     } else {
       confFlag.push('true');
-      // console.log("true=" + confFlag[0]);
     }
 
     //ひらがなチェック
-    if(name02.match(/^[ぁ-んー　]+$/)) {    //"ー"の後ろの文字は全角スペースです。
+    if(name02.match(/^[ぁ-んー　]+$/)) {//"ー"の後ろの文字は全角スペースです。
       confFlag.push('true');
     } else if(name02 === "") {
-      var name02_element = document.createElement('p');
-      name02_element.textContent = 'ふりがなを入力してください。';
-      alertbox_element.appendChild(name02_element);
+      alertText_element[1].innerText = "ふりがなを入力してください。";
+      alertText_element[1].classList.add("alertText");
       confFlag.push('false');
     } else {
-      var name02_element = document.createElement('p');
-      name02_element.textContent = 'ふりがなは全角ひらがなで入力してください。';
-      alertbox_element.appendChild(name02_element);
+      alertText_element[1].innerText = "ふりがなは全角ひらがなで入力してください。";
+      alertText_element[1].classList.add("alertText");
       confFlag.push('false');
     }
 
     //生年月日チェック
     if(year === "" || month === "" || day === "") {
-      var birthday_element = document.createElement('p');
-      birthday_element.textContent = '生年月日を選択してください。';
-      alertbox_element.appendChild(birthday_element);
+      alertText_element[2].innerText = "生年月日を選択してください。";
+      alertText_element[2].classList.add("alertText");
       confFlag.push('false');
     } else {
       confFlag.push('true');
@@ -68,9 +72,8 @@ function ConfirmForm() {
 
     //性別チェック
     if(gender === "") {
-      var gender_element = document.createElement('p');
-      gender_element.textContent = '性別を選択してください。';
-      alertbox_element.appendChild(gender_element);
+      alertText_element[3].innerText = "性別を選択してください。";
+      alertText_element[3].classList.add("alertText");
       confFlag.push('false');
     } else {
       confFlag.push('true');
@@ -81,15 +84,13 @@ function ConfirmForm() {
     if (mailPattern.test(email)) {
       confFlag.push('true');
      } else if(email === "") {
-      var email_element = document.createElement('p');
-      email_element.textContent = 'メールアドレスを入力してください。';
-      alertbox_element.appendChild(email_element);
+      alertText_element[4].innerText = "メールアドレスを入力してください。";
+      alertText_element[4].classList.add("alertText");
       confFlag.push('false');
     } else {
       // パターンにマッチしない場合
-      var email_element = document.createElement('p');
-      email_element.textContent = 'メールアドレスに間違いがあります。';
-      alertbox_element.appendChild(email_element);
+      alertText_element[4].innerText = "メールアドレスに間違いがあります。";
+      alertText_element[4].classList.add("alertText");
       confFlag.push('false');
     }
 
@@ -98,23 +99,20 @@ function ConfirmForm() {
     if (telPattern.test(tel)) {
       confFlag.push('true');
     } else if(tel === "") {
-      var tel_element = document.createElement('p');
-      tel_element.textContent = '電話番号を入力してください。';
-      alertbox_element.appendChild(tel_element);
+      alertText_element[5].innerText = "電話番号を入力してください。";
+      alertText_element[5].classList.add("alertText");
       confFlag.push('false');
     } else {
       // パターンにマッチしない場合
-      var tel_element = document.createElement('p');
-      tel_element.textContent = '電話番号は0から始まる半角数字のみで10～13文字以内で入力してください。';
-      alertbox_element.appendChild(tel_element);
+      alertText_element[5].innerText = "電話番号は0から始まる半角数字のみで10～13文字以内で入力してください。";
+      alertText_element[5].classList.add("alertText");
       confFlag.push('false');
     }
 
     //職業チェック
     if(job === "") {
-      var job_element = document.createElement('p');
-      job_element.textContent = '職業を入力してください。';
-      alertbox_element.appendChild(job_element);
+      alertText_element[6].innerText = "職業を入力してください。";
+      alertText_element[6].classList.add("alertText");
       confFlag.push('false');
     } else {
       confFlag.push('true');
@@ -122,14 +120,14 @@ function ConfirmForm() {
 
     //住所チェック
     if(address01 === "") {
-      var address01_element = document.createElement('p');
-      address01_element.textContent = '住所を入力してください。';
-      alertbox_element.appendChild(address01_element);
+      alertText_element[7].innerText = "住所を入力してください。";
+      alertText_element[7].classList.add("alertText");
       confFlag.push('false');
     } else {
       confFlag.push('true');
     }
 
+    //確認フォーム表示フラグ確認
     var confFlagAll = confFlag.every(value => value === "true")
     if (confFlagAll) {
       fadeIn();
