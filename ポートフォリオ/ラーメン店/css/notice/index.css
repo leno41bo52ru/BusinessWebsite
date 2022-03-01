@@ -107,16 +107,13 @@
 .fujin__notice__list li a {
   display: block;
   padding: 20px;
+  border-top: 1px solid #db3b1f;
 }
 
 .fujin__notice__list li a:hover {
   -webkit-transition: .6s;
   transition: .6s;
   background-color: #e2d6bf;
-}
-
-.fujin__notice__list li:nth-of-type(n + 2) {
-  border-top: 1px solid #db3b1f;
 }
 
 .fujin__notice__list li:nth-of-type(4n) {

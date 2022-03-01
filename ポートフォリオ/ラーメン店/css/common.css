@@ -5,7 +5,7 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
-    padding-top: 86.6px;
+    padding-top: 73.4px;
   }
 }
 
@@ -70,7 +70,7 @@ header .fujin__top__box01__logo {
 
 @media screen and (max-width: 767px) {
   header .fujin__top__box01__logo {
-    width: 200px;
+    width: 160px;
   }
 }
 
@@ -89,6 +89,15 @@ header .fujin__top__box01__logo img {
 }
 
 @media screen and (max-width: 767px) {
+  header .fujin__top__box01 {
+    /* ----------------------- */
+    /* base_sp
+          /* ----------------------- */
+    /* 以下、ハンバーガーボタン */
+    /* 以下、ハンバーガーメニュー */
+    /* メニューオープン時 */
+    /* デフォルトのbuttonスタイルをリセット */
+  }
   header .fujin__top__box01 .burger-btn {
     display: block;
     width: 39px;
@@ -166,6 +175,7 @@ header .fujin__top__box01__logo img {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     padding: 0 20px;
+    font-size: 18px;
     text-align: center;
   }
   header .fujin__top__box01 .nav-list {
@@ -203,8 +213,14 @@ header .fujin__top__box01__logo img {
 
 header .fujin__top__box01__contact {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  header .fujin__top__box01__contact {
+    font-size: 18px;
+  }
 }
 
 header .fujin__top__box01__contact span {
@@ -212,12 +228,6 @@ header .fujin__top__box01__contact span {
   padding-left: 30px;
   font-size: 18px;
   line-height: 2.0;
-}
-
-@media screen and (max-width: 767px) {
-  header .fujin__top__box01__contact span {
-    font-size: 16px;
-  }
 }
 
 header .fujin__top__box01__contact span::after {
@@ -340,6 +350,12 @@ header .fujin__bottom__box01 li a {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .fujin__breadcrumb span:nth-of-type(n + 2) {
+    margin-left: 20px;
+  }
+}
+
 .fujin__breadcrumb span:nth-of-type(n + 2)::after {
   content: "";
   position: absolute;
@@ -354,9 +370,103 @@ header .fujin__bottom__box01 li a {
 }
 
 @media screen and (max-width: 767px) {
+  .fujin__breadcrumb span:nth-of-type(n + 2)::after {
+    left: -10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .fujin__breadcrumb {
     width: 100%;
   }
+}
+
+.fujin__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.fujin__progress__item {
+  position: relative;
+  width: 33.3%;
+  text-align: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 13px 0;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #999999;
+  border-top: 3px solid #dddddd;
+  border-left: 3px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__progress__item {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 10px 0;
+  }
+}
+
+.fujin__progress__item:nth-last-of-type(1) {
+  border-right: 3px solid #dddddd;
+}
+
+.fujin__progress__item:not(:last-child)::before, .fujin__progress__item:not(:last-child)::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  content: '';
+  border: 37px solid transparent;
+  border-left: 20px solid #ffffff;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__progress__item:not(:last-child)::before, .fujin__progress__item:not(:last-child)::after {
+    border-width: 25px;
+    border-left-width: 12px;
+  }
+}
+
+.fujin__progress__item:not(:last-child)::before {
+  margin-left: 3px;
+  border-left-color: #dddddd;
+}
+
+.fujin__progress__item:nth-of-type(2).active {
+  border-right: none;
+}
+
+.fujin__progress__item.active {
+  z-index: 2;
+  background: #0070BD;
+  color: #FFF;
+}
+
+.fujin__progress__item.active:not(:last-child)::after {
+  border-left-color: #0070bd;
+}
+
+.fujin__progress__item.active:not(:last-child)::before {
+  border-left: none;
+}
+
+.fujin__progress .border-none {
+  border-left: none;
 }
 
 .upper__wrapper {
@@ -491,12 +601,12 @@ footer .fujin__sns li {
 
 @media screen and (max-width: 767px) {
   footer .fujin__sns li {
-    width: 25px;
+    width: 30px;
   }
 }
 
 footer .fujin__sns li:nth-of-type(n + 2) {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 footer .fujin__sns li a {
@@ -512,7 +622,7 @@ footer .fujin__sns li img {
 }
 
 footer .fujin__copylight {
-  padding: 10px 0;
+  padding: 10px;
   background-color: #db3b1f;
   color: #ffffff;
   font-size: 12px;

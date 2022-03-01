@@ -2,7 +2,7 @@
 body {
   padding-top: 134px;
   @media screen and (max-width:767px) {
-    padding-top: 86.6px;
+    padding-top: 73.4px;
   }
 }
 
@@ -50,7 +50,7 @@ header {
         &__logo {
           width: 220px;
           @media screen and (max-width:767px) {
-            width: 200px;
+            width: 160px;
           }
           a {
             display: block;
@@ -134,6 +134,7 @@ header {
               left: 50%;
               transform: translate(-50%,-50%);
               padding: 0 20px;
+              font-size: 18px;
               text-align: center;
             }
           }
@@ -177,16 +178,16 @@ header {
         //▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ハンバーガーメニュー記述▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
         &__contact {
           text-align: center;
-          font-size: 14px;
+          font-size: 16px;
           color: #ffffff;
+          @media screen and (max-width:767px) {
+            font-size: 18px;
+          }
           span {
             position: relative;
             padding-left: 30px;
             font-size: 18px;
             line-height: 2.0;
-            @media screen and (max-width:767px) {
-              font-size: 16px;
-            }
             &::after {
               position: absolute;
               content: "";
@@ -285,6 +286,9 @@ header {
     span:nth-of-type(n + 2) {
       position: relative;
       margin-left: 30px;
+      @media screen and (max-width:767px) {
+        margin-left: 20px;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -297,10 +301,83 @@ header {
         -webkit-transform: rotate(25deg);
         -ms-transform: rotate(25deg);
         transform: rotate(25deg);
+        @media screen and (max-width:767px) {
+          left: -10px;
+        }
       }
     }
     @media screen and (max-width:767px) {
       width: 100%;
+    }
+  }
+  &__progress {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    &__item {
+      position: relative;
+      width: 33.3%;
+      text-align: center;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 0;
+      line-height: 1.5;
+      background: #ffffff;
+      color: #999999;
+      border-top: 3px solid #dddddd;
+      border-left: 3px solid #dddddd;
+      border-bottom: 3px solid #dddddd;
+      border-right: 1px solid #dddddd;
+      @media screen and (max-width:767px) {
+        font-size: 11px;
+        line-height: 1.4;
+        padding: 10px 0;
+      }
+      &:nth-last-of-type(1) {
+        border-right: 3px solid #dddddd;
+      }
+      &:not(:last-child)::before,
+      &:not(:last-child)::after {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        content: '';
+        border: 37px solid transparent;
+        border-left: 20px solid #ffffff;
+        margin: auto;
+        @media screen and (max-width:767px) {
+          border-width: 25px;
+          border-left-width: 12px;
+        }
+      }
+      &:not(:last-child)::before {
+        margin-left: 3px;
+        border-left-color: #dddddd;
+      }
+      &:nth-of-type(2) {
+        &.active {
+          border-right: none;
+        }
+      }
+      &.active {
+        z-index: 2;
+        background: #0070BD;
+        color: #FFF;
+        &:not(:last-child)::after {
+          border-left-color: #0070bd;
+        }
+        &:not(:last-child)::before {
+          border-left: none;
+        }
+      }
+    }
+    .border-none {
+      border-left: none;
     }
   }
 }
@@ -406,10 +483,10 @@ footer {
       li {
         width: 35px;
         @media screen and (max-width:767px) {
-          width: 25px;
+          width: 30px;
         }
         &:nth-of-type(n + 2) {
-          margin-left: 15px;
+          margin-left: 20px;
         }
         a {
           display: block;
@@ -423,7 +500,7 @@ footer {
       }
     }
     &__copylight {
-      padding: 10px 0;
+      padding: 10px;
       background-color: #db3b1f;
       color: #ffffff;
       font-size: 12px;

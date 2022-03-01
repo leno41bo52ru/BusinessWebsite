@@ -42,6 +42,9 @@
     height: 96px; /* ボタンの高さ */
     background-size: 48px 96px;
     margin-top: -48px;
+    &:focus {
+      outline: none;
+    }
     @media screen and (max-width:767px) {
       width: 36px;
       height: 72px;
@@ -395,12 +398,6 @@
         }
       }
       &__info-detail {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: right;
-        justify-content: right;
-        -webkit-align-items: center;
-        align-items: center;
         text-align: right;
         margin-top: 30px;
         @media screen and (max-width:767px) {
@@ -408,6 +405,7 @@
         }
         a {
           position: relative;
+          display: inline-block;
           background-color: #db3b1f;
           padding: 10px 15px 10px 35px;
           border-radius: 10px;

@@ -83,13 +83,11 @@
         a {
           display: block;
           padding: 20px;
+          border-top: 1px solid #db3b1f;
           &:hover {
             transition: .6s;
             background-color: #e2d6bf;
           }
-        }
-        &:nth-of-type(n + 2) {
-          border-top: 1px solid #db3b1f;
         }
         &:nth-of-type(4n) {
           border-bottom: 1px solid #db3b1f;

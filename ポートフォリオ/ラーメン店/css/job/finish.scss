@@ -1,0 +1,23 @@
+.fujin {
+  &__finish {
+    padding: 60px 0;
+    background-color: #fcf6f1;
+    @media screen and (max-width:767px) {
+      padding: 30px 0;
+    }
+    &__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
