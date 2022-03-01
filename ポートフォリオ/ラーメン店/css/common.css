@@ -381,6 +381,94 @@ header .fujin__bottom__box01 li a {
   }
 }
 
+.fujin__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.fujin__progress__item {
+  position: relative;
+  width: 33.3%;
+  text-align: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 13px 0;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #999999;
+  border-top: 3px solid #dddddd;
+  border-left: 3px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__progress__item {
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 10px 0;
+  }
+}
+
+.fujin__progress__item:nth-last-of-type(1) {
+  border-right: 3px solid #dddddd;
+}
+
+.fujin__progress__item:not(:last-child)::before, .fujin__progress__item:not(:last-child)::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  content: '';
+  border: 37px solid transparent;
+  border-left: 20px solid #ffffff;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__progress__item:not(:last-child)::before, .fujin__progress__item:not(:last-child)::after {
+    border-width: 25px;
+    border-left-width: 12px;
+  }
+}
+
+.fujin__progress__item:not(:last-child)::before {
+  margin-left: 3px;
+  border-left-color: #dddddd;
+}
+
+.fujin__progress__item:nth-of-type(2).active {
+  border-right: none;
+}
+
+.fujin__progress__item.active {
+  z-index: 2;
+  background: #0070BD;
+  color: #FFF;
+}
+
+.fujin__progress__item.active:not(:last-child)::after {
+  border-left-color: #0070bd;
+}
+
+.fujin__progress__item.active:not(:last-child)::before {
+  border-left: none;
+}
+
+.fujin__progress .border-none {
+  border-left: none;
+}
+
 .upper__wrapper {
   position: fixed;
   right: 50px;
