@@ -1,0 +1,387 @@
+.fujin {
+  &__job {
+    padding-bottom: 60px;
+    background-color: #fcf6f1;
+    @media screen and (max-width:767px) {
+      padding-bottom: 30px;
+    }
+    &__MainVisual {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-image: url(../../image/fujin_img36.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: .2;
+      }
+      &__title {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        width: 100%;
+        padding: 0 10px;
+        transform: translateY(-50%);
+        font-size: 60px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        font-family: serif;
+        z-index: 1;
+        @media screen and (max-width:767px) {
+          font-size: 40px;
+        }
+      }
+    }
+    &__caption {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      background-color: #000000;
+      color: #ffffff;
+      @media screen and (max-width:767px) {
+        width: 100%;
+        padding: 20px 0;
+      }
+      &__inner {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        @media screen and (max-width:1000px) {
+          width: 100%;
+        }
+        @media screen and (max-width:767px) {
+          -webkit-align-items: flex-start;
+          align-items: flex-start;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      &__title {
+        margin-right: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        @media screen and (max-width:767px) {
+          margin: 0 0 10px 0;
+        }
+      }
+      &__label {
+        padding: 7px 11px;
+        background-color: #db3b1f;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+    }
+    &__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      @media screen and (max-width:767px) {
+        width: 100%;
+      }
+    }
+    &__box01 {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      @media screen and (max-width:767px) {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      &__left {
+        width: calc(100% - 300px);
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+        &__title {
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #ccc;
+          font-size: 20px;
+          font-weight: bold;
+          color: #636363;
+          @media screen and (max-width:767px) {
+            font-size: 18px;
+          }
+        }
+        table {
+          margin-bottom: 20px;
+          border-collapse: collapse;
+          border:1px solid #d7d7d7;
+          tbody {
+            tr {
+              th,td {
+                padding: 10px 5px;
+                border-collapse: collapse;
+                border:1px solid #d7d7d7;
+                vertical-align: middle;
+              }
+              th {
+                width: 60px;
+                background-color: #efefef;
+                text-align: center;
+              }
+            }
+          }
+        }
+        &__catchcopy {
+          color: #D08E45;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &__detail {
+          margin-bottom: 30px;
+          @media screen and (max-width:767px) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &__right {
+        width: 250px;
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+        &__button {
+          display: block;
+          padding: 10px 20px;
+          background-color: #db3b1f;
+          font-size: 18px;
+          color: #ffffff;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 5px;
+          &:hover {
+            transition: .6s;
+            background-color: #bd2611;
+          }
+        }
+      }
+    }
+    &__slick-wrapper {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      align-items: center;
+      margin-bottom: 30px;
+      @media screen and (max-width:767px) {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      /*==================================================
+      スライダーのためのcss
+      ===================================*/
+      .gallery{
+        width: 50%;
+        @media screen and (max-width:767px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        li {
+          border: 7px solid #db3b1f;
+        }
+      }
+      .choice-btn {
+        width: 45%;
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+        li {
+          cursor: pointer;
+          border: 7px solid #db3b1f;
+        }
+        /*選択するサムネイル画像の設定*/
+        .slick-active {
+          opacity: .6;
+          &:hover {
+            transition: .3s;
+            opacity: 1;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .slick-current {
+          opacity: 1;
+        }
+        .slick-track {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%!important;
+          .slick-slide {
+            width: calc(50% - 10px)!important;
+            margin: 5px;
+            @media screen and (max-width:767px) {
+              width: calc(25% - 8px)!important;
+              &:nth-of-type(1) {
+                margin-left: 0;
+              }
+              &:nth-last-of-type(1) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      img{
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;/*画像の下にできる余白を削除*/
+      }
+  
+      /*矢印の設定*/
+      /*戻る、次へ矢印の位置*/
+      .slick-prev, 
+      .slick-next {
+        position: absolute;
+        z-index: 3;
+        top: 42%;
+        cursor: pointer;/*マウスカーソルを指マークに*/
+        outline: none;/*クリックをしたら出てくる枠線を消す*/
+        height: 50px;
+        width: 25px;
+        background-image: url(../../image/fujin_icon02.png);
+        background-size: 25px,50px;
+        background-position: center;
+      }
+
+      /*戻る矢印の位置と形状*/
+      .slick-prev {
+        left: 10px;
+        transform: rotate(180deg);
+      }
+
+      /*次へ矢印の位置と形状*/
+      .slick-next {
+        right: 10px;
+      }  
+    }
+    &__appeal {
+      margin-bottom: 30px;
+      &__title {
+        font-size: 18px;
+        padding: 10px 20px;
+        color: #ffffff;
+        font-weight: bold;
+        background-image: url(../../image/fujin_img01.png);
+      }
+      &__text {
+        padding: 20px;
+        border-left: 1px solid #db3b1f;
+        border-right: 1px solid #db3b1f;
+        border-bottom: 1px solid #db3b1f;
+        @media screen and (max-width:767px) {
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+    &__detail {
+      padding: 20px;
+      border: 1px solid #db3b1f;
+      &:nth-of-type(n + 2) {
+        margin-top: 30px;
+      }
+      &__title {
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #db3b1f;
+        color: #db3b1f;
+        font-weight: bold;
+      }
+      &__box {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        &:nth-of-type(n + 2) {
+          border-top: 1px dashed #333;
+          margin-top: 10px;
+          padding-top: 10px;
+        }
+        &__title {
+          width: 200px;
+          @media screen and (max-width:767px) {
+            width: 100px;
+            font-size: 14px;
+          }
+        }
+        &__text {
+          width: calc(100% - 250px);
+          @media screen and (max-width:767px) {
+            width: calc(100% - 110px);
+            font-size: 14px;
+          }
+        }
+        &__map {
+          margin-left: 20px;
+          a {
+            display: inline-block;
+            color: #a29167;
+            &:hover {
+              color: #db3b1f;
+            }
+          }
+        }
+        &__tag {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+          li {
+            margin: 3px;
+            padding: 3px;
+            color: #D08E45;
+            font-size: 14px;
+            border: 1px solid #D08E45;
+          }
+        }
+        &__tell {
+          a {
+            display: inline-block;
+            color: #a29167;
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__button {
+      a {
+        display: block;
+        width: 270px;
+        margin: 50px auto 0;
+        padding: 10px 20px;
+        background-color: #db3b1f;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 5px;
+        @media screen and (max-width:767px) {
+          margin-top: 30px;
+        }
+        &:hover {
+          transition: .6s;
+          background: #bd2611;
+        }
+      }
+    }
+  }
+}

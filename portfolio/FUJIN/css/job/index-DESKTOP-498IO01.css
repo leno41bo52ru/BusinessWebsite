@@ -1,0 +1,514 @@
+@charset "UTF-8";
+.fujin__job {
+  padding-bottom: 60px;
+  background-color: #fcf6f1;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job {
+    padding-bottom: 30px;
+  }
+}
+
+.fujin__job__MainVisual {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url(../../image/fujin_img36.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fujin__job__MainVisual::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .2;
+}
+
+.fujin__job__MainVisual__title {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  width: 100%;
+  padding: 0 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-family: serif;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__MainVisual__title {
+    font-size: 40px;
+  }
+}
+
+.fujin__job__caption {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__caption {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.fujin__job__caption__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .fujin__job__caption__inner {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__caption__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fujin__job__caption__title {
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__caption__title {
+    margin: 0 0 10px 0;
+  }
+}
+
+.fujin__job__caption__label {
+  padding: 7px 11px;
+  background-color: #db3b1f;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.fujin__job__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__inner {
+    width: 100%;
+  }
+}
+
+.fujin__job__box01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__box01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.fujin__job__box01__left {
+  width: calc(100% - 300px);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__box01__left {
+    width: 100%;
+  }
+}
+
+.fujin__job__box01__left__title {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  color: #636363;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__box01__left__title {
+    font-size: 18px;
+  }
+}
+
+.fujin__job__box01__left table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border: 1px solid #d7d7d7;
+}
+
+.fujin__job__box01__left table tbody tr th, .fujin__job__box01__left table tbody tr td {
+  padding: 10px 5px;
+  border-collapse: collapse;
+  border: 1px solid #d7d7d7;
+  vertical-align: middle;
+}
+
+.fujin__job__box01__left table tbody tr th {
+  width: 60px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.fujin__job__box01__left__catchcopy {
+  color: #D08E45;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fujin__job__box01__left__detail {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__box01__left__detail {
+    margin-bottom: 20px;
+  }
+}
+
+.fujin__job__box01__right {
+  width: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__box01__right {
+    width: 100%;
+  }
+}
+
+.fujin__job__box01__right__button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #db3b1f;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.fujin__job__box01__right__button:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background-color: #bd2611;
+}
+
+.fujin__job__slick-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  /*==================================================
+      スライダーのためのcss
+      ===================================*/
+  /*矢印の設定*/
+  /*戻る、次へ矢印の位置*/
+  /*戻る矢印の位置と形状*/
+  /*次へ矢印の位置と形状*/
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__slick-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fujin__job__slick-wrapper .gallery {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__slick-wrapper .gallery {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.fujin__job__slick-wrapper .gallery li {
+  border: 7px solid #db3b1f;
+}
+
+.fujin__job__slick-wrapper .choice-btn {
+  width: 45%;
+  /*選択するサムネイル画像の設定*/
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__slick-wrapper .choice-btn {
+    width: 100%;
+  }
+}
+
+.fujin__job__slick-wrapper .choice-btn li {
+  cursor: pointer;
+  border: 7px solid #db3b1f;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-active {
+  opacity: .6;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-active:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 1;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-active:focus {
+  outline: none;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-current {
+  opacity: 1;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100% !important;
+}
+
+.fujin__job__slick-wrapper .choice-btn .slick-track .slick-slide {
+  width: calc(50% - 10px) !important;
+  margin: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__slick-wrapper .choice-btn .slick-track .slick-slide {
+    width: calc(25% - 8px) !important;
+  }
+  .fujin__job__slick-wrapper .choice-btn .slick-track .slick-slide:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .fujin__job__slick-wrapper .choice-btn .slick-track .slick-slide:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+.fujin__job__slick-wrapper img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  /*画像の下にできる余白を削除*/
+}
+
+.fujin__job__slick-wrapper .slick-prev,
+.fujin__job__slick-wrapper .slick-next {
+  position: absolute;
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  height: 50px;
+  width: 25px;
+  background-image: url(../../image/fujin_icon02.png);
+  background-size: 25px,50px;
+  background-position: center;
+}
+
+.fujin__job__slick-wrapper .slick-prev {
+  left: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fujin__job__slick-wrapper .slick-next {
+  right: 10px;
+}
+
+.fujin__job__appeal {
+  margin-bottom: 30px;
+}
+
+.fujin__job__appeal__title {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  background-image: url(../../image/fujin_img01.png);
+}
+
+.fujin__job__appeal__text {
+  padding: 20px;
+  border-left: 1px solid #db3b1f;
+  border-right: 1px solid #db3b1f;
+  border-bottom: 1px solid #db3b1f;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__appeal__text {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.fujin__job__detail {
+  padding: 20px;
+  border: 1px solid #db3b1f;
+}
+
+.fujin__job__detail:nth-of-type(n + 2) {
+  margin-top: 30px;
+}
+
+.fujin__job__detail__title {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #db3b1f;
+  color: #db3b1f;
+  font-weight: bold;
+}
+
+.fujin__job__detail__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fujin__job__detail__box:nth-of-type(n + 2) {
+  border-top: 1px dashed #333;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.fujin__job__detail__box__title {
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__detail__box__title {
+    width: 100px;
+    font-size: 14px;
+  }
+}
+
+.fujin__job__detail__box__text {
+  width: calc(100% - 250px);
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__detail__box__text {
+    width: calc(100% - 110px);
+    font-size: 14px;
+  }
+}
+
+.fujin__job__detail__box__map {
+  margin-left: 20px;
+}
+
+.fujin__job__detail__box__map a {
+  display: inline-block;
+  color: #a29167;
+}
+
+.fujin__job__detail__box__map a:hover {
+  color: #db3b1f;
+}
+
+.fujin__job__detail__box__tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fujin__job__detail__box__tag li {
+  margin: 3px;
+  padding: 3px;
+  color: #D08E45;
+  font-size: 14px;
+  border: 1px solid #D08E45;
+}
+
+.fujin__job__detail__box__tell a {
+  display: inline-block;
+  color: #a29167;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.fujin__job__button a {
+  display: block;
+  width: 270px;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background-color: #db3b1f;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .fujin__job__button a {
+    margin-top: 30px;
+  }
+}
+
+.fujin__job__button a:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+  background: #bd2611;
+}
+/*# sourceMappingURL=index.css.map */
